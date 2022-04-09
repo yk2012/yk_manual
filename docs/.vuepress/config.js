@@ -41,9 +41,12 @@ module.exports = {
               title: "HTML",
               path: "/fe_basics/html",
               children: [
-                { title: "常用标签", path: "/fe_basics/html/01常用标签" },
-                { title: "HTML5标签", path: "/fe_basics/html/02HTML5标签" },
-                { title: "语义化标签", path: "/fe_basics/html/03语义化标签" },
+                { title: "总体概述", path: "/fe_basics/html/01总体概述" },
+                { title: "常用标签", path: "/fe_basics/html/02常用标签" },
+                { title: "高阶文本", path: "/fe_basics/html/03高阶文本" },
+                { title: "结构标签", path: "/fe_basics/html/04结构标签" },
+                { title: "表单标签", path: "/fe_basics/html/05表单标签" },
+                { title: "多媒体标签", path: "/fe_basics/html/06多媒体标签" },
               ],
             },
             {
