@@ -2,7 +2,6 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9dea9d22d0f2420384ecf3a7ca4bd785.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70#pic_center)
 
 
-@[toc]
 
 之前也总结过一些前端面试题，推荐可以一起看看
 
