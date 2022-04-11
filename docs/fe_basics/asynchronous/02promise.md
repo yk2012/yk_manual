@@ -1,6 +1,4 @@
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d59ec4ec41ff480697a645fc81bebd5f.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70#pic_center)
-@[toc]
 # 1. 预备知识
 ## 1.1 实例对象与函数对象
 - 实例对象：new 函数产生的对象，称为实例对象，简称为对象
@@ -36,6 +34,7 @@ console.log('forEach()之后')
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210210161324356.png)
 
 ### 2. 异步回调
+
 > 不会立即执行，会放入回调队列中将来执行
 
 定时器回调 / ajax回调 / Promise成功或失败的回调
@@ -63,6 +62,7 @@ console.log('----')
 > js 引擎先把初始化的同步代码都执行完成后，才执行回调队列中的代码
 
 ## 1.3 JS中的异常error处理
+
 ### 1. 错误的类型
 `Error`：所有错误的父类型
 
@@ -146,10 +146,16 @@ console.log('出错之后')
 
 # 2. Promise的理解和使用
 ## 2.1 Promise是什么
+
+![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b31170e7f29c4d6eb887b4b2743b18e2~tplv-k3u1fbpfcp-watermark.image?)
+
 ### 1. 理解Promise
+
 - 抽象表达：`Promise`是JS中进行**异步编程**的新的解决方案(旧方案是单纯使用回调函数)
+
 【推荐阅读 [【JavaScript】同步与异步-异步与并行-异步运行机制-为什么要异步编程-异步与回调-回调地狱-JavaScript中的异步操作](https://blog.csdn.net/weixin_44972008/article/details/114380206)】
----- 异步编程 ①fs 文件操作 ②数据库操作 ③Ajax ④定时器
+
+---- 异步编程 ① fs 文件操作 ② 数据库操作 ③ Ajax ④ 定时器
 
 - 具体表达：
 ①从语法上看：`Promise`是一个构造函数 (自己身上有`all`、`reject`、`resolve`这几个方法，原型上有`then`、`catch`等方法)
@@ -161,7 +167,9 @@ console.log('出错之后')
 `Promise` 提供统一的 API，各种异步操作都可以用同样的方法进行处理
 
 ### 2. Promise 的状态 
+
 实例对象promise中的一个属性 `PromiseState`
+
 1. `pending` 变为 `resolved`/`fullfilled`
 2. `pending` 变为 `rejected`
 
@@ -177,6 +185,7 @@ console.log('出错之后')
 
 `resolve`/`reject`可以修改值
 ### 4. Promise 的基本流程
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210210134357696.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
 
 ### 5. Promise 的基本使用
