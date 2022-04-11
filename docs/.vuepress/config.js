@@ -143,7 +143,10 @@ module.exports = {
                 },
                 { title: "ajax", path: "/fe_basics/asynchronous/07ajax" },
                 { title: "axios", path: "/fe_basics/asynchronous/08axios" },
-                { title: "axios源码", path: "/fe_basics/asynchronous/09axios" },
+                {
+                  title: "axios源码",
+                  path: "/fe_basics/asynchronous/09axios源码",
+                },
               ],
             },
             // BROWSER
