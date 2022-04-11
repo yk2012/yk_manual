@@ -309,8 +309,20 @@ module.exports = {
               path: "/fe_advance/vue_src",
               children: [
                 {
-                  title: "配置",
-                  path: "/fe_advance/vue_src/01配置",
+                  title: "模板引擎",
+                  path: "/fe_advance/vue_src/01模板引擎",
+                },
+                {
+                  title: "diff",
+                  path: "/fe_advance/vue_src/02diff",
+                },
+                {
+                  title: "数据响应",
+                  path: "/fe_advance/vue_src/03数据响应",
+                },
+                {
+                  title: "ast",
+                  path: "/fe_advance/vue_src/04ast",
                 },
               ],
             },
@@ -322,6 +334,34 @@ module.exports = {
                 {
                   title: "入门概述",
                   path: "/fe_advance/React_basis/01入门概述",
+                },
+                {
+                  title: "面向组件",
+                  path: "/fe_advance/React_basis/02面向组件",
+                },
+                {
+                  title: "生命周期",
+                  path: "/fe_advance/React_basis/03生命周期",
+                },
+                {
+                  title: "脚手架",
+                  path: "/fe_advance/React_basis/04使用脚手架",
+                },
+                {
+                  title: "待办事项",
+                  path: "/fe_advance/React_basis/05待办事项",
+                },
+                {
+                  title: "ajax实战",
+                  path: "/fe_advance/React_basis/06ajax实战",
+                },
+                {
+                  title: "router5",
+                  path: "/fe_advance/React_basis/07router5",
+                },
+                {
+                  title: "router6",
+                  path: "/fe_advance/React_basis/08router6",
                 },
               ],
             },
