@@ -162,8 +162,8 @@ console.log('出错之后')
 ②从功能上看：`promise`对象用来封装一个异步操作并可以获取其成功/失败的结果值
 
 - 阮一峰的解释：
-所谓`Promise`，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果
-从语法上说，`Promise` 是一个对象，从它可以获取异步操作的消息
+所谓`Promise`，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果；
+从语法上说，`Promise` 是一个对象，从它可以获取异步操作的消息。
 `Promise` 提供统一的 API，各种异步操作都可以用同样的方法进行处理
 
 ### 2. Promise 的状态 
@@ -180,7 +180,9 @@ console.log('出错之后')
 - 无论成功还是失败，都会有一个结果数据。成功的结果数据一般称为 `value`，而失败的一般称为 `reason`。
 
 ### 3. Promise对象的值 
+
 实例对象promise的另一个值 `PromiseResult`
+
 保存着对象 成功/失败 的值（`value`/`reason`）
 
 `resolve`/`reject`可以修改值
@@ -192,31 +194,36 @@ console.log('出错之后')
 
 ```javascript
 const promise = new Promise(function(resolve, reject) {
-  // ... some code
+  // ... some code 用于兑现承诺 【同步调用】
   if (/* 异步操作成功 */){
-    resolve(value);
+    resolve(value); // 调用resolve函数，传入成功的参数
   } else {
-    reject(reason);
+    reject(reason); // 调用reject函数，传入失败的原因（new Error('promise rejected')）
   }
 });
 ```
+
 `Promise`构造函数接受**一个函数**（执行器函数）作为参数，该函数的**两个参数**分别是`resolve`和`reject`。它们是**两个函数**，由 JavaScript 引擎提供，不用自己部署。
 
-`resolve`函数的作用是，将`Promise`对象的状态从“未完成”变为“成功”（即从 `pending` 变为 `resolved`），在**异步操作成功**时调用，并将异步操作的结果，作为参数`value`传递出去；
-`reject`函数的作用是，将`Promise`对象的状态从“未完成”变为“失败”（即从 `pending` 变为 `rejected`），在**异步操作失败**时调用，并将异步操作报出的错误，作为参数`error`/`reason`传递出去。
+- `resolve`函数的作用是，将`Promise`对象的状态从“未完成”变为“成功”（即从 `pending` 变为 `resolved`），在**异步操作成功**时调用，并将异步操作的结果，作为参数`value`传递出去；
+
+- `reject`函数的作用是，将`Promise`对象的状态从“未完成”变为“失败”（即从 `pending` 变为 `rejected`），在**异步操作失败**时调用，并将异步操作报出的错误，作为参数`error`/`reason`传递出去。
 
 `Promise`实例生成以后，可以用`then`方法分别指定`resolved`状态和`rejected`状态的回调函数。
 
 ```javascript
 promise.then(function(value) {
-  // success
+  // success 成功的回调函数
 }, function(reason) {
-  // failure
+  // failure 失败的回调函数
 });
 ```
+
 `then`方法可以接受**两个回调函数**作为参数。
-第一个回调函数`onResolved()`是`Promise`对象的状态变为`resolved`时调用
-第二个回调函数`onRejected()`是`Promise`对象的状态变为`rejected`时调用
+
+- 第一个回调函数`onResolved()`是`Promise`对象的状态变为`resolved`时调用
+- 第二个回调函数`onRejected()`是`Promise`对象的状态变为`rejected`时调用
+
 这两个函数都是可选的，不一定要提供。它们都接受`Promise`对象传出的值作为参数
 
 - 一个例子
@@ -247,10 +254,11 @@ p.then(
 )
 ```
 
-> .then() 和执行器(executor)同步执行，.then() 中的回调函数异步执行
+> `.then()` 和执行器(executor)同步执行，`.then()` 中的回调函数异步执行
 
 ## 2.2 为什么要用 Promise
 ### 1.指定回调函数的方式更加灵活
+
 旧的：必须在启动异步任务前指定
 
 ```javascript
@@ -277,7 +285,9 @@ setTimeout(() => {
 }, 3000);
 ```
 具体参考
+
 [03promise基本使用.html](https://github.com/yk2012/Promise_demo/blob/master/03promise%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html)
+
 [04为什么使用Promise.html](https://github.com/yk2012/Promise_demo/blob/master/04%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8Promise.html)
 ### 2.支持链式调用，可以解决回调地狱问题
 ##### 什么是回调地狱？
@@ -372,19 +382,24 @@ new Promise((resolve, reject) => { // excutor执行器函数
 }
 )
 ```
+
 ### 4. Promise.resolve 方法：`Promise.resolve(value)`
+
 `value`：将被 `Promise` 对象解析的参数，也可以是一个成功或失败的 `Promise` 对象
 
 返回：返回一个带着给定值解析过的 Promise 对象，如果参数本身就是一个 Promise 对象，则直接返回这个 Promise 对象。
 
 1. 如果传入的参数为 非Promise类型的对象, 则返回的结果为成功promise对象
+
 ```javascript
 let p1 = Promise.resolve(521);
 console.log(p1); // Promise {<fulfilled>: 521}
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226213107194.png)
 
 2. 如果传入的参数为 Promise 对象, 则参数的结果决定了 resolve 的结果
+
 ```javascript
 let p2 = Promise.resolve(new Promise((resolve, reject) => {
     // resolve('OK'); // 成功的Promise
@@ -395,9 +410,11 @@ p2.catch(reason => {
     console.log(reason);
 })
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226213523502.png)
 
 ### 5. Promise.reject 方法：`Promise.resolve(reason)`
+
 `reason`：失败的原因
 
 说明：返回一个失败的 `promise` 对象
@@ -423,6 +440,7 @@ console.log(p3);
 new Promise((resolve, reject) => {
  resolve(1)
 })
+
 //相当于
 const p1 = Promise.resolve(1)
 const p2 = Promise.resolve(2)
@@ -449,7 +467,9 @@ let p3 = Promise.resolve('Oh Yeah');
 const result = Promise.all([p1, p2, p3]);
 console.log(result);
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021022621374890.png)
+
 ```javascript
 let p1 = new Promise((resolve, reject) => {
   resolve('OK');
@@ -460,6 +480,7 @@ let p3 = Promise.resolve('Oh Yeah');
 const result = Promise.all([p1, p2, p3]);
 console.log(result);
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226213850411.png)
 
 ```javascript
@@ -497,7 +518,9 @@ reason => {
 `iterable`：包含 n 个 `promise` 的可迭代对象，如 `Array` 或 `String`
 
 说明：返回一个新的 `promise`，第一个完成的 `promise` 的结果状态就是最终的结果状态
+
 **谁先完成就输出谁(不管是成功还是失败)**
+
 ```javascript
 const pRace = Promise.race([p1, p2, p3])
 // 谁先完成就输出谁(不管是成功还是失败)
@@ -540,6 +563,7 @@ console.log(result);
 
 # 3. Promise 的几个关键问题
 ## 1. 如何改变 promise 的状态？
+
 (1)`resolve(value)`：如果当前是 `pending` 就会变为 `resolved`
 
 (2)`reject(reason)`：如果当前是 `pending` 就会变为 `rejected`
@@ -560,6 +584,7 @@ p.then(
 ```
 
 ## 2. 一个 promise 指定多个成功/失败回调函数，都会调用吗？
+
 当 `promise` **改变**为对应状态时**都会调用**
 
 ```javascript
@@ -579,6 +604,7 @@ p.then(
 // reason2 2
 ```
 ## 3. 改变 promise 状态和指定回调函数谁先谁后？
+
 > 都有可能，常规是先指定回调再改变状态，但也可以先改状态再指定回调
 
 - 如何先改状态再指定回调？
@@ -630,6 +656,7 @@ new Promise((resolve, reject) => {
 这种写法，先改变的状态(同时指定数据)，后指定回调函数(不需要再保存)，直接异步执行回调函数
 
 ## 4. promise.then() 返回的新 promise 的结果状态由什么决定？
+
 (1)简单表达：由 `then()` 指定的回调函数执行的结果决定
 
 ```javascript
@@ -645,6 +672,7 @@ let result = p.then(value => {
 
 console.log(result);
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226221412496.png)
 
 
@@ -666,8 +694,8 @@ let result = p.then(value => {
 
 console.log(result);
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226221553618.png)
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226221553618.png)
 
 
 ​ ② 如果返回的是非 `promise` 的任意值，新 `promise` 变为 `resolved`，`value` 为返回的值
@@ -686,11 +714,12 @@ let result = p.then(value => {
 
 console.log(result);
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226221643359.png)
 
 
-
 ​ ③ 如果返回的是另一个新 `promise`，此 `promise` 的结果就会成为新 `promise` 的结果
+
 ```javascript
 let p = new Promise((resolve, reject) => {
   resolve('ok');
@@ -762,6 +791,7 @@ new Promise((resolve, reject) => {
 // 对应输出如上所示
 ```
 ## 5.promise 如何串联多个操作任务？
+
 (1)`promise` 的 `then()` 返回一个新的 `promise`，可以并成 `then()` 的链式调用
 
 (2)通过 `then` 的链式调用串联多个同步/异步任务
@@ -783,6 +813,7 @@ p.then(value => {
   console.log(value); // undefined
 })
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021022622231651.png)
 
 ```javascript
@@ -886,6 +917,7 @@ new Promise((resolve, reject) => {
 或者，将 `reason => {throw reason}` 替换为 `reason => Promise.reject(reason)` 也是一样的
 
 ## 7.中断 promise 链？
+
 当使用 `promise` 的 `then` 链式调用时，在中间中断，不再调用后面的回调函数
 
 办法：在回调函数中返回一个 `pending` 状态的 `promise` 对象
@@ -925,6 +957,7 @@ new Promise((resolve, reject) => {
 ```
 
 为了在 `catch` 中就中断执行，可以这样写：
+
 ```javascript
 new Promise((resolve, reject) => {
    //resolve(1)
@@ -958,6 +991,7 @@ new Promise((resolve, reject) => {
 )
 // onRejected1() 1
 ```
+
 在 `catch` 中返回一个新的 `promise`，且这个 `promise` 没有结果。
 
 由于，返回的新的 `promise` 结果决定了后面 `then` 中的结果，所以后面的 `then` 中也没有结果。
@@ -967,7 +1001,7 @@ new Promise((resolve, reject) => {
 
 
 # 参考
-[尚硅谷Web前端Promise教程从入门到精通（2021抢先版）](https://www.bilibili.com/video/BV1GA411x7z1)
-[尚硅谷Promise教程(promise前端进阶必学)](https://www.bilibili.com/video/BV1MJ41197Eu) 
-[回调函数-Promise](http://www.woc12138.com/article/43) 
-[ECMAScript 6 入门 Promise 对象](https://es6.ruanyifeng.com/#docs/promise) 
+- [尚硅谷Web前端Promise教程从入门到精通（2021抢先版）](https://www.bilibili.com/video/BV1GA411x7z1)
+- [尚硅谷Promise教程(promise前端进阶必学)](https://www.bilibili.com/video/BV1MJ41197Eu) 
+- [回调函数-Promise](http://www.woc12138.com/article/43) 
+- [ECMAScript 6 入门 Promise 对象](https://es6.ruanyifeng.com/#docs/promise) 

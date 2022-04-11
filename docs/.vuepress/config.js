@@ -37,6 +37,7 @@ module.exports = {
           path: "/fe_basics/",
           collapsable: true,
           children: [
+            // HTML
             {
               title: "HTML",
               path: "/fe_basics/html",
@@ -49,6 +50,7 @@ module.exports = {
                 { title: "多媒体标签", path: "/fe_basics/html/06多媒体标签" },
               ],
             },
+            // CSS
             {
               title: "CSS",
               path: "/fe_basics/css",
@@ -72,6 +74,7 @@ module.exports = {
                 { title: "三栏布局", path: "/fe_basics/css_demo/三栏布局" },
               ],
             },
+            // JS
             {
               title: "JavaScript",
               path: "/fe_basics/javascript",
@@ -90,6 +93,7 @@ module.exports = {
                 { title: "继承", path: "/fe_basics/javascript/12继承" },
               ],
             },
+            // ES6+
             {
               title: "ES6",
               path: "/fe_basics/ES6",
@@ -111,39 +115,217 @@ module.exports = {
                 { title: "Map&Set", path: "/fe_basics/ES6/12Map与Set" },
               ],
             },
+            // ASYNC
             {
               title: "异步编程",
               path: "/fe_basics/asynchronous",
               children: [
-                { title: "ajax", path: "/fe_basics/asynchronous/01ajax" },
+                {
+                  title: "同步与异步",
+                  path: "/fe_basics/asynchronous/01同步与异步",
+                },
                 { title: "Promise", path: "/fe_basics/asynchronous/02promise" },
-                { title: "async", path: "/fe_basics/asynchronous/03async" },
-                { title: "事件循环", path: "/fe_basics/asynchronous/04event_loop" },
-                { title: "axios", path: "/fe_basics/asynchronous/05axios" },
-              ]
+                {
+                  title: "Promise源码",
+                  path: "/fe_basics/asynchronous/03promise源码",
+                },
+                {
+                  title: "generator",
+                  path: "/fe_basics/asynchronous/04generator",
+                },
+                {
+                  title: "async/await",
+                  path: "/fe_basics/asynchronous/05async",
+                },
+                {
+                  title: "事件循环",
+                  path: "/fe_basics/asynchronous/06event_loop",
+                },
+                { title: "ajax", path: "/fe_basics/asynchronous/07ajax" },
+                { title: "axios", path: "/fe_basics/asynchronous/08axios" },
+                { title: "axios源码", path: "/fe_basics/asynchronous/09axios" },
+              ],
             },
+            // BROWSER
             {
               title: "浏览器",
               path: "/fe_basics/browser",
               children: [
-                { title: "变量声明", path: "/fe_basics/ES6/01变量声明" },
-              ]
-            }
+                {
+                  title: "浏览器存储",
+                  path: "/fe_basics/browser/01浏览器存储",
+                },
+                {
+                  title: "浏览器运行",
+                  path: "/fe_basics/browser/02浏览器运行",
+                },
+                {
+                  title: "浏览器调试",
+                  path: "/fe_basics/browser/03浏览器调试",
+                },
+              ],
+            },
           ],
         },
       ],
-      "fe_advance": [
+      fe_advance: [
         {
-          title: '前端进阶',
-          path: '/fe_advance',
+          title: "前端进阶",
+          path: "/fe_advance",
           collapsable: false,
           children: [
+            // vue2基础
             {
-              title: 'Vue2基础',
-              path: '/fe_advance/'
-            }
-          ]
-        }
+              title: "Vue2基础",
+              path: "/fe_advance/Vue2_basis",
+              children: [
+                {
+                  title: "快速上手",
+                  path: "/fe_advance/Vue2_basis/01快速上手",
+                },
+                {
+                  title: "模板语法",
+                  path: "/fe_advance/Vue2_basis/02模板语法",
+                },
+                {
+                  title: "计算与监视",
+                  path: "/fe_advance/Vue2_basis/03计算与监视",
+                },
+                {
+                  title: "样式绑定",
+                  path: "/fe_advance/Vue2_basis/04样式绑定",
+                },
+                {
+                  title: "列表渲染",
+                  path: "/fe_advance/Vue2_basis/05列表渲染",
+                },
+                {
+                  title: "事件处理",
+                  path: "/fe_advance/Vue2_basis/06事件处理",
+                },
+                {
+                  title: "双向绑定",
+                  path: "/fe_advance/Vue2_basis/07双向绑定",
+                },
+                {
+                  title: "生命周期",
+                  path: "/fe_advance/Vue2_basis/08生命周期",
+                },
+                {
+                  title: "动画过渡",
+                  path: "/fe_advance/Vue2_basis/09动画过渡",
+                },
+                {
+                  title: "过滤器",
+                  path: "/fe_advance/Vue2_basis/10过滤器",
+                },
+                {
+                  title: "指令",
+                  path: "/fe_advance/Vue2_basis/11指令",
+                },
+              ],
+            },
+            // vue2进阶
+            {
+              title: "Vue2进阶",
+              path: "/fe_advance/Vue2_advance",
+              children: [
+                {
+                  title: "组件",
+                  path: "/fe_advance/Vue2_basis/01组件",
+                },
+                {
+                  title: "小知识",
+                  path: "/fe_advance/Vue2_basis/02小知识",
+                },
+                {
+                  title: "页面评价",
+                  path: "/fe_advance/Vue2_basis/03页面评价",
+                },
+                {
+                  title: "待办事项",
+                  path: "/fe_advance/Vue2_basis/04待办事项",
+                },
+                {
+                  title: "组件通信",
+                  path: "/fe_advance/Vue2_basis/05组件间通信",
+                },
+                {
+                  title: "用户搜索",
+                  path: "/fe_advance/Vue2_basis/06用户搜索",
+                },
+                {
+                  title: "脚手架",
+                  path: "/fe_advance/Vue2_basis/07脚手架",
+                },
+                {
+                  title: "组件库",
+                  path: "/fe_advance/Vue2_basis/08组件库",
+                },
+                {
+                  title: "路由",
+                  path: "/fe_advance/Vue2_basis/09路由",
+                },
+                {
+                  title: "Vuex",
+                  path: "/fe_advance/Vue2_basis/10Vuex",
+                },
+                {
+                  title: "Vuex再探",
+                  path: "/fe_advance/Vue2_basis/11Vuex再探",
+                },
+                {
+                  title: "VuePress",
+                  path: "/fe_advance/Vue2_basis/12VuePress",
+                },
+              ],
+            },
+            // 商城后台管理项目
+            {
+              title: "Vue2项目",
+              path: "/fe_advance/Vue2_project1",
+              children: [
+                {
+                  title: "配置",
+                  path: "/fe_advance/Vue2_project1/01配置",
+                },
+              ],
+            },
+            // Vue3
+            {
+              title: "Vue3",
+              path: "/fe_advance/Vue3",
+              children: [
+                {
+                  title: "基本使用",
+                  path: "/fe_advance/Vue3/基本使用",
+                },
+              ],
+            },
+            // Vue源码
+            {
+              title: "Vue源码",
+              path: "/fe_advance/vue_src",
+              children: [
+                {
+                  title: "配置",
+                  path: "/fe_advance/vue_src/01配置",
+                },
+              ],
+            },
+            // React基础
+            {
+              title: "React基础",
+              path: "/fe_advance/React_basis",
+              children: [
+                {
+                  title: "入门概述",
+                  path: "/fe_advance/React_basis/01入门概述",
+                },
+              ],
+            },
+          ],
+        },
       ],
       "/fe_code/": [
         {

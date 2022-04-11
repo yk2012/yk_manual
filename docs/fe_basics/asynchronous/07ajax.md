@@ -1,4 +1,4 @@
-@[toc]
+
 # 1. Ajax概述
 ## 1.1 AJAX 简介
 AJAX 全称为Asynchronous JavaScript And XML，就是异步的JS 和XML
@@ -121,7 +121,9 @@ name = "孙悟空" ; age = 18 ; gender = "男" ;
 ### 3.0.1 安装node.js
 [http://nodejs.cn/](http://nodejs.cn/)
 ### 3.0.2 安装express（服务端框架）
+
 [https://www.expressjs.com.cn/](https://www.expressjs.com.cn/)![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209164615378.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
+
 1. 初始化环境
 
 ```shell
@@ -155,30 +157,43 @@ app.listen(8000, () => {
 ```
 
 4. 运行js程序
+
 ```shell
 node .\01express使用.js
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209165304650.png)
 
 5. 打开网页显示页面
+
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209165339872.png)
 
 6. 调试程序可以查看请求和响应
+
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021020916541663.png)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209165526228.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
 ### 3.0.3 安装nodemon自动重启工具
+
 文件内容有修改自动重新启动服务
 [https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210301205043799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
+
 安装
+
 ```powershell
 npm install -g nodemon
 ```
+
 启动服务
 ```powershell
 ndoemon server.js
 ```
 ## 3.1 理解
+
 1. 使用`XMLHttpRequest` (XHR)对象可以与服务器交互, 也就是发送ajax 请求
 2. 前端可以获取到数据，而无需让整个的页面刷新。
 3. 这使得Web 页面可以只更新页面的局部，而不影响用户的操作。
@@ -222,11 +237,17 @@ xhr.onreadystatechange = function (){
 ## 3.3 使用案例
 
 ### 3.3.1 GET 请求
+
 点击返回响应信息
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209170011230.gif#pic_center)
+
 创建两个文件，浏览器端使用的html文件和服务器端使用的js文件
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209165720344.png)
+
 服务器端 server.js
+
 ```javascript
 // 1. 引入express
 const express = require('express');
@@ -247,11 +268,15 @@ app.listen(8000, () => {
   console.log("服务已经启动, 8000 端口监听中...");
  })
 ```
+
 启动服务
+
 ```powershell
 node server.js
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209171737175.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
+
 前端页面 html 
 ```html
 <!DOCTYPE html>
@@ -309,17 +334,23 @@ node server.js
 </body>
 </html>
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021020917150363.gif#pic_center)
 
-####  # GET 请求设置请求参数
+####  GET 请求设置请求参数
+
 设置url参数
+
 ```javascript
 xhr.open('GET', 'http://127.0.0.1:8000/server?a=100&b=200&c=300');
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209175142103.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210209175221929.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
 
 ### 3.3.2 POST请求
+
 鼠标放到div中，发post请求，将响应体放在div中呈现
 
 server.js添加post
@@ -379,7 +410,9 @@ post.html
 </body>
 </html>
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210218162905183.gif#pic_center)
+
 #### # 设置请求头信息
 
 ```javascript
@@ -459,7 +492,9 @@ app.all('/json-server', (request, response) => {
 </body>
 </html>
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210218175629329.gif#pic_center)
+
 ## 3.5 请求超时与网络异常
 
 ```javascript
@@ -486,7 +521,9 @@ xhr.abort()
 
 
 ## 3.8 解决 IE 缓存问题
+
 **问题**：在一些浏览器中(IE),由于缓存机制的存在，ajax 只会发送的第一次请求，剩余多次请求不会在发送给浏览器而是直接加载缓存中的数据。
+
 **解决方式**：浏览器的缓存是根据url 地址来记录的，所以我们只需要修改url 地址即可避免缓存问题
 
 ```javascript
@@ -494,9 +531,13 @@ xhr.open("get","/testAJAX?t="+Date.now());
 ```
 
 ## 3.9 AJAX 请求状态
+
 `xhr.readyState` 可以用来查看请求当前的状态
+
 https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/readyState
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210218121704846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDk3MjAwOA==,size_16,color_FFFFFF,t_70)
+
 - 0: 表示XMLHttpRequest 实例已经生成，但是open()方法还没有被调用
 - 1: 表示send()方法还没有被调用，仍然可以使用setRequestHeader()，设定HTTP请求的头信息
 - 2: 表示send()方法已经执行，并且头信息和状态码已经收到
@@ -524,6 +565,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/readyState
 
 # 4. jQuery 中的AJAX
 ## 4.1 get 请求
+
 ```javascript
 $.get(url, [data], [callback], [type])
 ```
@@ -569,11 +611,9 @@ $.ajax({
 })
 ```
 
-
-
-
 # 5. 跨域
 ## 5.1 同源策略
+
 - 同源策略(Same-Origin Policy)最早由Netscape 公司提出，是浏览器的一种安全策略
 - 同源： 协议、域名、端口号必须完全相同
 - 跨域： 违背同源策略就是**跨域**
@@ -662,17 +702,20 @@ router.get("/testAJAX" , function (req , res) {
 ```
 
 ### 5.2.2 CORS
+
 [https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 
 #### 1) CORS 是什么？
-CORS（Cross-Origin Resource Sharing），跨域资源共享。CORS 是官方的跨域解决方
-案，它的特点是不需要在客户端做任何特殊的操作，完全在服务器中进行处理，支持
-get 和post 请求。跨域资源共享标准新增了一组HTTP 首部字段，允许服务器声明哪些
-源站通过浏览器有权限访问哪些资源
+
+CORS（Cross-Origin Resource Sharing），跨域资源共享。CORS 是官方的跨域解决方案，它的特点是不需要在客户端做任何特殊的操作，完全在服务器中进行处理，支持get 和post 请求。跨域资源共享标准新增了一组HTTP 首部字段，允许服务器声明哪些源站通过浏览器有权限访问哪些资源
+
 #### 2) CORS 怎么工作的？
+
 CORS 是通过设置一个响应头来告诉浏览器，该请求允许跨域，浏览器收到该响应
 以后就会对响应放行。
+
 #### 3) CORS 的使用
+
 主要是服务器端的设置：
 
 ```javascript
