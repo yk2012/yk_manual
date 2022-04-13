@@ -35,7 +35,7 @@ module.exports = {
         {
           title: "前端基础",
           path: "/fe_basics/",
-          collapsable: true,
+          collapsable: false,
           children: [
             // HTML
             {
@@ -56,15 +56,16 @@ module.exports = {
               path: "/fe_basics/css",
               children: [
                 { title: "概述", path: "/fe_basics/css/01概述" },
-                { title: "选择器", path: "/fe_basics/css/01选择器" },
-                { title: "盒子模型", path: "/fe_basics/css/02盒子模型" },
-                { title: "浮动布局", path: "/fe_basics/css/03浮动布局" },
-                { title: "定位", path: "/fe_basics/css/04定位" },
-                { title: "字体&背景", path: "/fe_basics/css/05字体背景" },
-                { title: "高级技巧", path: "/fe_basics/css/06高级技巧" },
-                { title: "CSS3", path: "/fe_basics/css/07CSS3新特性" },
+                { title: "选择器", path: "/fe_basics/css/02选择器" },
+                { title: "字体背景", path: "/fe_basics/css/03字体背景" },
+                { title: "盒子模型", path: "/fe_basics/css/04盒子模型" },
+                { title: "定位", path: "/fe_basics/css/05定位" },
+                { title: "浮动布局", path: "/fe_basics/css/06浮动布局" },
+                { title: "小技巧", path: "/fe_basics/css/07小技巧" },
                 { title: "flex布局", path: "/fe_basics/css/08flex" },
-                { title: "LESS", path: "/fe_basics/css/09less" },
+                { title: "CSS3", path: "/fe_basics/css/09CSS3新特性" },
+                { title: "CSS工作原理", path: "/fe_basics/css/10工作原理" },
+                { title: "LESS", path: "/fe_basics/css/11less" },
               ],
             },
             {
@@ -172,11 +173,11 @@ module.exports = {
           ],
         },
       ],
-      fe_advance: [
+      "/fe_advance/": [
         {
           title: "前端进阶",
           path: "/fe_advance",
-          collapsable: false,
+          collapsable: flase,
           children: [
             // vue2基础
             {
@@ -370,6 +371,9 @@ module.exports = {
             },
           ],
         },
+      ],
+      "/fe_engineering/": [
+        {}
       ],
       "/fe_code/": [
         {
