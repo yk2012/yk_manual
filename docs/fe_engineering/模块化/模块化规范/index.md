@@ -101,3 +101,5 @@ Sea.js
 这就需要打包工具了
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/408e4f88e71349eebc4527481b3d3ea9~tplv-k3u1fbpfcp-watermark.image?)
+
+打包工具解决的是前端整体的模块化，并不单指JavaScript模块化
