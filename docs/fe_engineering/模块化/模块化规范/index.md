@@ -1,6 +1,13 @@
-## 模块化开发
 
-模块化的演变过程
+> 把单独的一个功能封装到一个模块（文件）中，模块之间相互隔离，但是可以通过特定的接口公开内部成员，也可以以来别的模块
+
+## 模块化的好处
+
+1. 防止命名冲突
+2. 代码复用，提高效率
+3. 高维护性
+
+## 模块化的演变过程
 
 1. 文件划分
 
@@ -23,6 +30,9 @@
 ```
 
 
+## 3. 模块化规范产品
+
+
 ## 模块化规范
 
 
@@ -35,6 +45,11 @@
 - 每个模块都有单独的作用域
 - 通过module.exports导出成员
 - 通过require函数载入模块
+
+node.js/Browserify
+- 模块分为：`单文件模块` 与 `包`
+- 模块成员导出：`module.exports` 和 `exports`
+- 模块成员导入：`require('模块标识符')`
 
 
 ### AMD (Asynchronous Module Definition)
@@ -66,6 +81,7 @@ require(['module1'], function(module1){
 - 模块js文件请求频繁
 
 ### CMD (Common Module Definition)
+（浏览器端）
 
 Sea.js
 
@@ -75,14 +91,4 @@ Sea.js
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab970a3178a04fbc96c31a218f0255d1~tplv-k3u1fbpfcp-watermark.image?)
 
-
-### ES module
-
-
-在`script`标签中使用`type="module"`开启ESM
-
-- 自动采用严格模式，忽略`'use strict'`
-- 每个ESM模块都是单独的私有作用域
-- ESM是通过CORS去请求外部JS模块
-- ESM的script标签会延迟执行脚本`defer`
 
