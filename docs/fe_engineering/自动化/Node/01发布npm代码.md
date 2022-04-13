@@ -1,4 +1,4 @@
-@[toc]
+
 
 关于 自定义JS工具类 相关类似的源码请看 [https://gitee.com/ykang2020/my_utils](https://gitee.com/ykang2020/my_utils)
 
