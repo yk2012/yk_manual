@@ -92,3 +92,12 @@ Sea.js
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab970a3178a04fbc96c31a218f0255d1~tplv-k3u1fbpfcp-watermark.image?)
 
 
+# 还需要改进
+
+- ES Modules 存在环境兼容问题
+- 模块文件过多，网络请求频繁
+- 所有前端资源都需要模块化
+
+这就需要打包工具了
+
+![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/408e4f88e71349eebc4527481b3d3ea9~tplv-k3u1fbpfcp-watermark.image?)
