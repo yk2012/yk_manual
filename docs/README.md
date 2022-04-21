@@ -4,7 +4,7 @@ heroImage: /YK.jpg
 heroText: YK菌
 tagline: YK菌的前端学习手册
 actionText: 一起学习 →
-actionLink: /fe_basics/
+actionLink: /basics/
 features:
 - title: 前端基础
   details: 这里有YK菌学习前端的知识总结
