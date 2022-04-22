@@ -145,7 +145,7 @@ export default class App extends Component {
 	- 一般组件：写组件标签时传递了什么，就能收到什么
 	- 路由组件：接收到三个固定的属性
 
-```
+```js
 history:
     go: ƒ go(n)
     goBack: ƒ goBack()
@@ -376,7 +376,10 @@ console.log(qs.parse(str)) // {carName: 'Benz', price: 199}
 ```
 
 ### 方法3. state参数
-1. 路由链接(携带参数)：`<Link to={{ pathname:'/demo/test', state:{name:'tom',age:18} }}>详情</Link>`
+1. 路由链接(携带参数)：
+```html
+<Link to={{ pathname:'/demo/test', state:{name:'tom',age:18} }}>详情</Link>
+```
 2. 注册路由(无需声明，正常注册即可)：`<Route path="/demo/test" component={Test}/>`
 3. 接收参数：`this.props.location.state`
 4. 备注：刷新也可以保留住参数【history对象记录着在】
