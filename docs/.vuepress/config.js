@@ -6,6 +6,11 @@ const {
   functional_programming,
   hand_code,
 } = require("../fe_code/index");
+const {
+  standardization,
+  modularization,
+  automation,
+} = require("../fe_engineering/index");
 
 module.exports = {
   title: "YK菌",
@@ -40,7 +45,7 @@ module.exports = {
     sidebar: {
       "/basics/": [fe_basics, cs_basics],
       "/fe_advance/": [typescript, vue, react],
-      "/fe_engineering/": [],
+      "/fe_engineering/": [standardization, modularization, automation],
       "/fe_code/": [
         algorithm,
         design_patterns,

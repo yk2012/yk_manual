@@ -1,9 +1,9 @@
-const { typescript } = require("./typescript/index");
-const { vue } = require("./Vue/index");
-const { react } = require("./React/index");
+const { standardization } = require("./standardization/index");
+const { modularization } = require("./modularization/index");
+const { automation } = require("./automation/index");
 
 module.exports = {
-  typescript,
-  vue,
-  react,
+  standardization,
+  modularization,
+  automation,
 };

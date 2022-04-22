@@ -1,6 +1,6 @@
 const { createItem } = require("../../utils/createItem");
 
-const tsBasicsItem = createItem("/fe_engineering/standardization/");
+const gitItem = createItem("/fe_engineering/standardization/Git/");
 
 const standardization = {
   title: "标准化",
@@ -8,14 +8,9 @@ const standardization = {
   collapsable: false,
   children: [
     {
-      title: "基础知识",
-      path: "/fe_advance/typescript/basics",
-      children: [tsBasicsItem("01概述")],
-    },
-    {
-      title: "类型体操",
-      path: "/fe_advance/typescript/type_challenges",
-      children: [tcItem("01为什么叫类型体操")],
+      title: "Git",
+      path: "/fe_engineering/standardization/Git",
+      children: [gitItem("01基本使用"), gitItem("02配置公钥")],
     },
   ],
 };
