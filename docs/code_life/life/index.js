@@ -7,7 +7,7 @@ const summaryItem = createItem("/code_life/life/summary/");
 const life = {
   title: "代码人生",
   path: "/code_life/life",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "阅读笔记",

@@ -9,7 +9,7 @@ const vueSrcItem = createItem("/fe_advance/Vue/vue_src/");
 const vue = {
   title: "Vue",
   path: "/fe_advance/Vue",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "2.x基础知识",

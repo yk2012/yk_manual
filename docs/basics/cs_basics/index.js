@@ -8,7 +8,7 @@ const v8Item = createItem("/basics/cs_basics/v8/");
 const cs_basics = {
   title: "计算机基础",
   path: "/basics/cs_basics",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "网络协议",

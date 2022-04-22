@@ -8,7 +8,7 @@ const reactSrcItem = createItem("/fe_advance/React/React_src/");
 const react = {
   title: "React",
   path: "/fe_advance/React",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "基础知识",
