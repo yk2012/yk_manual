@@ -10,6 +10,7 @@ const {
   modularization,
   automation,
 } = require("../fe_engineering/index");
+const { interview, life } = require("../code_life/index");
 
 module.exports = {
   title: "YK菌",
@@ -46,7 +47,7 @@ module.exports = {
       "/fe_advance/": [typescript, vue, react],
       "/fe_engineering/": [standardization, modularization, automation],
       "/fe_code/": [algorithm, design_patterns, functional_programming],
-      "/code_life/": [],
+      "/code_life/": [interview, life],
     },
     subSidebar: "auto",
   },
