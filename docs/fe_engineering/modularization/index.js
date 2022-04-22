@@ -14,7 +14,7 @@ const modularization = {
     {
       title: "模块化规范",
       path: "/fe_engineering/modularization/specification",
-      children: [moduleItem("01CommonJS"), gitItem("02ESM")],
+      children: [moduleItem("01CommonJS"), moduleItem("02ESM")],
     },
     {
       title: "Babel",

@@ -4,7 +4,6 @@ const {
   algorithm,
   design_patterns,
   functional_programming,
-  hand_code,
 } = require("../fe_code/index");
 const {
   standardization,
@@ -46,12 +45,7 @@ module.exports = {
       "/basics/": [fe_basics, cs_basics],
       "/fe_advance/": [typescript, vue, react],
       "/fe_engineering/": [standardization, modularization, automation],
-      "/fe_code/": [
-        algorithm,
-        design_patterns,
-        functional_programming,
-        hand_code,
-      ],
+      "/fe_code/": [algorithm, design_patterns, functional_programming],
       "/code_life/": [],
     },
     subSidebar: "auto",

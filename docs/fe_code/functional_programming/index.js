@@ -2,7 +2,7 @@ const { createItem } = require("../../utils/createItem");
 
 const funItem = createItem("/fe_code/functional_programming/");
 
-const functional = {
+const functional_programming = {
   title: "函数式编程",
   path: "/fe_code/functional_programming",
   collapsable: true,
@@ -16,5 +16,5 @@ const functional = {
 };
 
 module.exports = {
-  functional,
+  functional_programming,
 };
