@@ -22,6 +22,7 @@ const react = {
         reactBasicsItem("06ajax实战"),
         reactBasicsItem("07router5"),
         reactBasicsItem("08router6"),
+        reactBasicsItem("09redux"),
       ],
     },
     {
