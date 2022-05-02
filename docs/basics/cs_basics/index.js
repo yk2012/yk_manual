@@ -40,6 +40,7 @@ const cs_basics = {
         browserItem("02从url到页面呈现"),
         browserItem("03渲染原理"),
         browserItem("04浏览器存储"),
+        browserItem("05js执行机制"),
       ],
     },
     {
