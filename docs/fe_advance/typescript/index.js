@@ -6,7 +6,7 @@ const tcItem = createItem("/basics/cs_basics/type_challenges/");
 const typescript = {
   title: "typescript",
   path: "/fe_advance/typescript",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "基础知识",

@@ -6,7 +6,7 @@ const handCodeItem = createItem("/code_life/interview/hand_code/");
 const interview = {
   title: "面试必备",
   path: "/code_life/interview",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "面试题",

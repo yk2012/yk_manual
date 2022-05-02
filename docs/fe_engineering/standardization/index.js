@@ -5,7 +5,7 @@ const gitItem = createItem("/fe_engineering/standardization/Git/");
 const standardization = {
   title: "标准化",
   path: "/fe_engineering/standardization",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "Git",

@@ -7,7 +7,7 @@ const databaseItem = createItem("/fe_engineering/automation/database/");
 const automation = {
   title: "自动化",
   path: "/fe_engineering/automation",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "Node",

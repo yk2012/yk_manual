@@ -6,7 +6,7 @@ const leetCodeItem = createItem("/fe_code/algorithm/LeetCode/");
 const algorithm = {
   title: "算法与数据结构",
   path: "/fe_code/algorithm",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "算法与数据结构",

@@ -10,7 +10,7 @@ const asyncItem = createItem("/basics/fe_basics/asynchronous/");
 const fe_basics = {
   title: "前端基础",
   path: "/basics/fe_basics",
-  collapsable: false,
+  collapsable: true,
   children: [
     // HTML
     {

@@ -9,7 +9,7 @@ const rollupItem = createItem("/fe_engineering/modularization/Rollup/");
 const modularization = {
   title: "模块化",
   path: "/fe_engineering/modularization",
-  collapsable: false,
+  collapsable: true,
   children: [
     {
       title: "模块化规范",
