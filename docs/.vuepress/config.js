@@ -15,6 +15,7 @@ const { interview, life } = require("../code_life/index");
 module.exports = {
   title: "YK菌",
   decription: "YK菌的前端学习手册",
+  // base: "/yk_manual/",
   theme: "reco",
   head: ["link", { rel: "icon", href: "/logo.ico" }],
   locales: {
@@ -23,6 +24,8 @@ module.exports = {
     },
   },
   themeConfig: {
+    subSidebar: "auto",
+    smoothScroll: true,
     nav: [
       { text: "基础知识", link: "/basics/" },
       { text: "前端进阶", link: "/fe_advance/" },
@@ -43,12 +46,11 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/basics/": [fe_basics, cs_basics],
+      "/basics/":  [fe_basics, cs_basics],
       "/fe_advance/": [typescript, vue, react],
       "/fe_engineering/": [standardization, modularization, automation],
       "/fe_code/": [algorithm, design_patterns, functional_programming],
       "/code_life/": [interview, life],
     },
-    subSidebar: "auto",
   },
 };
