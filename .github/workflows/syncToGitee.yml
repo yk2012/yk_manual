@@ -10,10 +10,10 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: 'github/yk2012'
-          dst: 'gitee/ykang2020'
+          src: "github/yk2012"
+          dst: "gitee/ykang2020"
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
           static_list: "yk_manual"
           force_update: true
           debug: true
