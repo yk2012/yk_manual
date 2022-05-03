@@ -1,7 +1,7 @@
 const { createItem } = require("../../utils/createItem");
 
 const tsBasicsItem = createItem("/fe_advance/typescript/basics/");
-const tcItem = createItem("/basics/cs_basics/type_challenges/");
+const tcItem = createItem("/fe_advance/typescript/type_challenges/");
 
 const typescript = {
   title: "typescript",

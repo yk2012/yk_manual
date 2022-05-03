@@ -17,7 +17,7 @@ module.exports = {
   decription: "YK菌的前端学习手册",
   // base: "/yk_manual/",
   theme: "reco",
-  head: ["link", { rel: "icon", href: "/logo.ico" }],
+  // head: ["link", { rel: "icon", href: "/logo.ico" }],
   locales: {
     "/": {
       lang: "zh-CN",
