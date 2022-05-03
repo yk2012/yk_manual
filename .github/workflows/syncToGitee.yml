@@ -11,9 +11,9 @@ jobs:
         uses: Yikun/hub-mirror-action@master
         with:
           src: 'github/yk2012'
-          dst: 'gitee/yk2012'
+          dst: 'gitee/ykang2020'
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
-          static_list: "learn-typescript"
+          static_list: "yk_manual"
           force_update: true
           debug: true
