@@ -1,13 +1,17 @@
 # YK菌的前端学习手册
 
+https://yk2012.github.io/yk_manual/
+
 > 这里记录了我的学习过程所遇到的全部值得记录的内容，整理完成会上线。
 
 ## 记录前端学习过程中的点点滴滴
 
-从基础知识到框架，再到工程化，形成笔记记录下来，才能保证学进去了~~
+从计算机&前端基础知识到框架使用，再到工程化，形成笔记记录下来 ~~
 
-- HTML+CSS+JS
-- Vue+React+Typescript
+- HTML + CSS + JS
+- Vue + React + Typescript
+- Node + DB
+
 
 ## 记录技术提升的笔记
 
