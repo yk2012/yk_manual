@@ -15,7 +15,7 @@ const { interview, life } = require("../code_life/index");
 module.exports = {
   title: "YK菌",
   decription: "YK菌的前端学习手册",
-  // base: "/yk_manual/",
+  base: "/yk_manual/",
   theme: "reco",
   // head: ["link", { rel: "icon", href: "/logo.ico" }],
   locales: {
