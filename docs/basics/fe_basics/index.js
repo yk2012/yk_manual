@@ -9,13 +9,13 @@ const asyncItem = createItem("/basics/fe_basics/asynchronous/");
 
 const fe_basics = {
   title: "前端基础",
-  path: "/basics/fe_basics",
+  path: "/basics/fe_basics/html/01总体概述",
   collapsable: true,
   children: [
     // HTML
     {
       title: "HTML",
-      path: "/basics/fe_basics/html",
+      path: "/basics/fe_basics/html/01总体概述",
       children: [
         htmlItem("01总体概述"),
         htmlItem("02常用标签"),
@@ -28,7 +28,7 @@ const fe_basics = {
     // CSS
     {
       title: "CSS",
-      path: "/basics/fe_basics/css",
+      path: "/basics/fe_basics/css/01概述",
       children: [
         cssItem("01概述"),
         cssItem("02选择器"),
@@ -45,13 +45,13 @@ const fe_basics = {
     },
     {
       title: "CSS实战",
-      path: "/basics/fe_basics/css_demo",
+      path: "/basics/fe_basics/css_demo/01盒子居中对齐",
       children: [cssDemoItem("01盒子居中对齐"), cssDemoItem("02三栏布局")],
     },
     // JS
     {
       title: "JavaScript",
-      path: "/basics/fe_basics/javascript",
+      path: "/basics/fe_basics/javascript/01基本语法",
       children: [
         jsItem("01基本语法"),
         jsItem("02数据类型"),
