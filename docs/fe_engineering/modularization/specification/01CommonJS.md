@@ -2,6 +2,7 @@ CommonJS模块化规范
 
 ## 概述
 CommonJS是Node.js使用的一种模块化规范
+
 在Node.js中，一个文件就是一个模块，每个模块都有自己的作用域
 
 在服务器端，模块的加载是运行时同步加载的；在浏览器端，模块需要提前编译打包处理
@@ -14,6 +15,8 @@ CommonJS是Node.js使用的一种模块化规范
 ## 语法
 - 暴露模块：`module.exports = value`或`exports.xxx = value`
 - 引入模块：`require(xxx)`,如果是第三方模块，`xxx`为模块名；如果是自定义模块，`xxx`为模块文件路径
+
+> 注意，这里导出的是一个对象引用
 
 ## 示例
 ### 使用module.exports
