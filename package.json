@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^7.0.4",
     "vuepress": "^1.9.7",
     "vuepress-theme-reco": "^1.6.11"
   }
