@@ -54,7 +54,14 @@ const vue = {
     {
       title: "3.x基础知识",
       path: "/fe_advance/Vue/Vue3",
-      children: [vue3BasicsItem("01基本使用")],
+      children: [
+        vue3BasicsItem("01基本使用"),
+        vue3BasicsItem("02基础入门"),
+        vue3BasicsItem("03全家桶实战"),
+        vue3BasicsItem("04组件库开发"),
+        vue3BasicsItem("05项目引入Jest"),
+        vue3BasicsItem("06响应式原理"),
+      ],
     },
     {
       title: "实现原理",

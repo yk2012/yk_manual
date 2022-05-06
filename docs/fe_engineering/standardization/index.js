@@ -10,7 +10,11 @@ const standardization = {
     {
       title: "Git",
       path: "/fe_engineering/standardization/Git",
-      children: [gitItem("01基本使用"), gitItem("02配置公钥")],
+      children: [
+        gitItem("01基本使用"),
+        gitItem("02配置公钥"),
+        gitItem("03配置husky"),
+      ],
     },
   ],
 };
