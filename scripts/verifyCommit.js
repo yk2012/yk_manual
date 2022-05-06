@@ -8,7 +8,6 @@ const mergeRe = /^(Merge pull request|Merge branch)/;
 if (!commitRE.test(msg)) {
   if (!mergeRe.test(msg)) {
     console.log("git commit信息校验不通过");
-
     console.error(`git commit的信息格式不对, 需要使用 title(scope): desc的格式
     比如 fix: xxbug
     feat(test): add new 
