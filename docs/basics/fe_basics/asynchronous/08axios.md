@@ -1,4 +1,4 @@
-@[toc]
+
 # 1. 自己创建一个API
 ## 1.1 API 的分类
 1. REST API: restful （Representational State Transfer (资源)表现层状态转化）

@@ -1,5 +1,7 @@
 
 # 1. 源码目录结构
+
+```
 ├── /dist/ # 项目输出目录
 ├── /lib/ # 项目源码目录
 │ ├── /adapters/ # 定义请求的适配器xhr、http
@@ -18,6 +20,7 @@
 ├── package.json # 项目信息
 ├── index.d.ts # 配置TypeScript 的声明文件
 └── index.js # 入口文件
+```
 
 # 2. 源码分析
 ### 2.1 axios 与Axios 的关系?

@@ -1,11 +1,11 @@
-@[toc]
-# 1. async 和 await
+
+## 1. async 和 await
 `async` 和 `await` 两种语法结合可以让异步代码像同步代码一样
 `async`和`await`关键字让我们可以用一种更简洁的方式写出基于`Promise`的异步行为，而无需刻意地链式调用`promise`
 `async`用来声明异步函数，函数会返回一个`promise`对象
 `awiat`用来暂停异步函数代码的执行，等待`promise`解决
 
-# 2. 用promise存在的一个问题*
+## 2. 用promise存在的一个问题*
 这个`promise`在超时后会解决为一个值，如果程序中的其他代码要在这个值可用时访问它，则需要写一个解决处理程序
 ```javascript
 let p = new Promise((resolve, reject) => setTimeout(resolve, 1000, 3));
@@ -13,7 +13,7 @@ let p = new Promise((resolve, reject) => setTimeout(resolve, 1000, 3));
 p.then(x => console.log(x)); //3
 ```
 这样是不方便的，因为其他代码都必须塞到`promise`处理程序中
-# 3. async 声明异步函数
+## 3. async 声明异步函数
 1. `async`函数返回值为`promise`对象
 2. `promise`对象的结果由`async`函数执行的返回值决定
 
@@ -42,7 +42,7 @@ result.then(value => {
   console.warn(reason);
 })
 ```
-# 4. await 表达式
+## 4. await 表达式
 
 > 异步函数主要针对不会马上完成的任务，所以自然需要一种暂停和恢复执行的能力，使用`await`关键字可以暂停异步函数代码的执行，等待期约解决
 
@@ -69,7 +69,7 @@ async function main(){
 main() 
 ```
 
-# 5. async与await解决上面的*问题
+## 5. async与await解决上面的*问题
 ```javascript
 async function foo() {
 	let p = new Promise((resolve, reject) => setTimeout(resolve, 1000, 3));
@@ -79,7 +79,7 @@ foo(); // 3
 ```
 
 
-# 6. 注意
+## 6. 注意
 `async`关键字不过是一个标识符，如果异步函数中没有`await`关键字，其执行与普通函数没什么区别
 
 ```javascript
@@ -132,7 +132,7 @@ bar();
 console.log(5);
 ```
 
-# 6. async与await结合发送ajax
+## 7. async与await结合发送ajax
 ```javascript
 function sendAjax(url) {
   return new Promise((resolve, reject) => {
@@ -165,7 +165,7 @@ async function sendmsg() {
 sendmsg();
 ```
 
-# 资料
+## 资料
 [尚硅谷Web前端ES6教程](https://www.bilibili.com/video/BV1uK411H7on?p=49)
 [尚硅谷Promise教程](https://www.bilibili.com/video/BV1MJ41197Eu?p=35)
 [尚硅谷Web前端Promise教程从入门到精通](https://www.bilibili.com/video/BV1GA411x7z1?p=46)
