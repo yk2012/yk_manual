@@ -18,6 +18,19 @@ module.exports = {
   base: "/yk_manual/",
   theme: "reco",
   // head: ["link", { rel: "icon", href: "/logo.ico" }],
+  head: [
+    [
+      'script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f32c3b70c575fd4087e737d05053988a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `
+    ]
+  ],
   locales: {
     "/": {
       lang: "zh-CN",
@@ -26,6 +39,7 @@ module.exports = {
   themeConfig: {
     subSidebar: "auto",
     smoothScroll: true,
+    lastUpdated: '上次更新',
     nav: [
       { text: "基础知识", link: "/basics/" },
       { text: "前端进阶", link: "/fe_advance/" },
