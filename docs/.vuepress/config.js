@@ -82,6 +82,13 @@ module.exports = {
     subSidebar: "auto",
     smoothScroll: true,
     lastUpdated: "上次更新",
+    vssueConfig: {
+      platform: "github",
+      owner: "yk2012",
+      repo: "yk_manual",
+      clientId: "3e144f3998e7234cf17b",
+      clientSecret: "bcfd0ae906306d3f61e1d953812cba302c3e143e",
+    },
     nav: [
       { text: "基础知识", link: "/basics/" },
       { text: "前端进阶", link: "/fe_advance/" },
