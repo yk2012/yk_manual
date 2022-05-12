@@ -71,6 +71,22 @@ module.exports = {
         },
       },
     ],
+    [
+      "vuepress-plugin-nuggets-style-copy",
+      {
+        copyText: "复制代码",
+        tip: {
+          content: "复制成功",
+        },
+      },
+    ],
+    [
+      'copyright',
+      {
+        authorName: 'YK菌', // 选中的文字将无法被复制
+        minLength: 30, // 如果长度超过  30 个字符
+      },
+    ]
   ],
   locales: {
     "/": {
