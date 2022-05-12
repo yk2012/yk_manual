@@ -81,12 +81,20 @@ module.exports = {
       },
     ],
     [
-      'copyright',
+      "copyright",
       {
-        authorName: 'YK菌', // 选中的文字将无法被复制
+        authorName: "YK菌", // 选中的文字将无法被复制
         minLength: 30, // 如果长度超过  30 个字符
       },
-    ]
+    ],
+    [
+      "cursor-effects",
+      {
+        size: 2, // size of the particle, default: 2
+        shape: "star", // ['star' | 'circle'], // shape of the particle, default: 'star'
+        zIndex: 999999999, // z-index property of the canvas, default: 999999999
+      },
+    ],
   ],
   locales: {
     "/": {
