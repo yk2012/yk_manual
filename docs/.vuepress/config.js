@@ -95,6 +95,16 @@ module.exports = {
         zIndex: 999999999, // z-index property of the canvas, default: 999999999
       },
     ],
+    [
+      "dynamic-title",
+      {
+        showIcon: "logo52.png",
+        showText: "欢迎回来~",
+        hideIcon: "logo52.png",
+        hideText: "不要离开我！",
+        recoverTime: 2000,
+      },
+    ],
   ],
   locales: {
     "/": {
