@@ -1,8 +1,8 @@
-
+# TS中webpack的配置
 > 实际开发中我们都需要使用构建工具对代码进行打包，TS同样也可以结合构建工具一起使用，今天我们以webpack为例介绍一下如何结合构建工具使用TS。
 
 
-# 初始化项目
+## 初始化项目
 
 通过执行命令 `npm init -y` 初始化一个项目并创建package.json文件
 
@@ -11,9 +11,9 @@
 创建src/index.ts文件，用来编写ts代码
 
 
-# 使用构建工具webpack
+## 使用构建工具webpack
 
-## 安装依赖包
+### 安装依赖包
 
 ```powershell
 npm i -D webpack webpack-cli webpack-dev-server
@@ -65,7 +65,7 @@ npm i -D html-webpack-plugin clean-webpack-plugin
 
     -   webpack中的清除插件，每次构建都会先清除目录
 
-## 配置webpack
+### 配置webpack
 
 > 在根目录下配置webpack.config.js
 
@@ -213,7 +213,7 @@ module.exports = (env, argv) => {
 
 
 
-## 配置tsc
+### 配置tsc
 
 > 根目录下创建tsconfig.json，可以根据自己需要自行配置，详细可以参考[【TS】快速上手（四）配置选项 - 编译选项compilerOptions - 掘金 (juejin.cn)](https://juejin.cn/post/7035907662944403492)
 
@@ -227,7 +227,7 @@ module.exports = (env, argv) => {
 }
 ```
 
-## 编写代码
+### 编写代码
 
 
 index.ts
@@ -260,7 +260,7 @@ index.html
 </html>
 ```
 
-## 配置命令
+### 配置命令
 
 > 修改package.json添加如下配置
 
@@ -304,11 +304,11 @@ npm start
 
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8bf1a04a68f420683270cdc4d25f8f7~tplv-k3u1fbpfcp-watermark.image?)
 
-# 配置babel
+## 配置babel
 
 > 除了webpack，开发中还经常需要结合babel来对代码进行转换以使其可以兼容到更多的浏览器，通过以下步骤可以将babel引入到项目中。
 
-## 安装依赖包
+### 安装依赖包
 
 ```powershell
 npm i -D @babel/core @babel/preset-env babel-loader core-js
@@ -330,7 +330,7 @@ npm i -D @babel/core @babel/preset-env babel-loader core-js
 
     -   core-js 用来使老版本的浏览器支持新版ES语法
 
-## 修改配置文件
+### 修改配置文件
 
 修改webpack.config.js配置文件
 
