@@ -12,7 +12,7 @@ const cs_basics = {
   children: [
     {
       title: "网络协议",
-      path: "/basics/cs_basics/networks",
+      path: "/basics/cs_basics/networks/01网络分层",
       children: [
         netItem("01网络分层"),
         netItem("02基本概念"),
@@ -22,7 +22,7 @@ const cs_basics = {
     },
     {
       title: "深入HTTP",
-      path: "/basics/cs_basics/http",
+      path: "/basics/cs_basics/http/01网络基础",
       children: [
         httpItem("01网络基础"),
         httpItem("02HTTP协议"),
@@ -34,13 +34,17 @@ const cs_basics = {
     // BROWSER
     {
       title: "浏览器原理",
-      path: "/basics/cs_basics/browser",
+      path: "/basics/cs_basics/browser/01Chrome架构",
       children: [
         browserItem("01Chrome架构"),
         browserItem("02从url到页面呈现"),
         browserItem("03渲染原理"),
         browserItem("04浏览器存储"),
         browserItem("05js执行机制"),
+        browserItem("06页面循环系统"),
+        browserItem("07页面相关"),
+        browserItem("08浏览器网络"),
+        browserItem("09浏览器安全"),
       ],
     },
     {

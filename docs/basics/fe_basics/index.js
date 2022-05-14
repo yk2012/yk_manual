@@ -70,7 +70,7 @@ const fe_basics = {
     // ES6+
     {
       title: "ES6+",
-      path: "/basics/fe_basics/ES6",
+      path: "/basics/fe_basics/ES6/01变量声明",
       children: [
         esItem("01变量声明"),
         esItem("02面向对象"),
@@ -91,7 +91,7 @@ const fe_basics = {
     // ASYNC
     {
       title: "异步编程",
-      path: "/basics/fe_basics/asynchronous",
+      path: "/basics/fe_basics/asynchronous/01同步与异步",
       children: [
         asyncItem("01同步与异步"),
         asyncItem("02Promise"),
