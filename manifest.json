@@ -1,0 +1,21 @@
+{
+  "name": "YK菌前端学习手册",
+  "short_name": "yk_manual",
+  "display": "standalone",
+  "background_color": "#fff",
+  "start_url": "/yk_manual/",
+  "scope": "/yk_manual/",
+  "description": "YK菌前端学习手册 记录前端学习点点滴滴",
+  "icons": [
+    {
+      "src": "logo52.png",
+      "sizes": "52x52",
+      "type": "image/png"
+    },
+    {
+      "src": "logo288.png",
+      "sizes": "288x288",
+      "type": "image/png"
+    }
+  ]
+}
