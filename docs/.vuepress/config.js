@@ -31,6 +31,14 @@ module.exports = {
       })();
       `,
     ],
+    [
+      "link",
+      {
+        href: "https://cdn.jsdelivr.net/npm/@docsearch/css@alpha",
+        rel: "stylesheet",
+      },
+    ],
+    ["script", { src: "https://cdn.jsdelivr.net/npm/@docsearch/js@alpha" }],
     ["link", { rel: "icon", href: "/logo52.png" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
@@ -122,6 +130,12 @@ module.exports = {
       clientId: "3e144f3998e7234cf17b",
       clientSecret: "bcfd0ae906306d3f61e1d953812cba302c3e143e",
     },
+    // algolia: {
+    //   apiKey: "950e7863a862fc33a367ae535b1b386f",
+    //   indexName: "yk2012",
+    //   // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+    //   appId: "EOAXZTLE6A",
+    // },
     nav: [
       { text: "基础知识", link: "/basics/" },
       { text: "前端进阶", link: "/fe_advance/" },
