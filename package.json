@@ -1,7 +1,7 @@
 {
   "name": "yk_manual",
   "version": "1.0.0",
-  "description": "",
+  "description": "YK菌的前端学习手册-代码仓库",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
