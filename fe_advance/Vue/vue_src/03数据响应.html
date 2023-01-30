@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>YK菌</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f32c3b70c575fd4087e737d05053988a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<link rel="icon" href="/yk_manual/logo52.png">
+<link rel="manifest" href="/yk_manual/manifest.json">
+<link rel="apple-touch-icon" href="/yk_manual/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/yk_manual/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/yk_manual/assets/css/0.styles.ac71bee4.css" as="style"><link rel="preload" href="/yk_manual/assets/js/app.1e74c93b.js" as="script"><link rel="preload" href="/yk_manual/assets/js/3.7830d0fe.js" as="script"><link rel="preload" href="/yk_manual/assets/js/1.caa73dc8.js" as="script"><link rel="preload" href="/yk_manual/assets/js/184.35abbdec.js" as="script"><link rel="preload" href="/yk_manual/assets/js/9.94359d55.js" as="script"><link rel="prefetch" href="/yk_manual/assets/js/10.d7f11787.js"><link rel="prefetch" href="/yk_manual/assets/js/100.13f14c61.js"><link rel="prefetch" href="/yk_manual/assets/js/101.61c62ab5.js"><link rel="prefetch" href="/yk_manual/assets/js/102.53424960.js"><link rel="prefetch" href="/yk_manual/assets/js/103.c5bcdcdf.js"><link rel="prefetch" href="/yk_manual/assets/js/104.cb22d149.js"><link rel="prefetch" href="/yk_manual/assets/js/105.a5310998.js"><link rel="prefetch" href="/yk_manual/assets/js/106.610d8af8.js"><link rel="prefetch" href="/yk_manual/assets/js/107.4041c698.js"><link rel="prefetch" href="/yk_manual/assets/js/108.fbd10be0.js"><link rel="prefetch" href="/yk_manual/assets/js/109.fb5c49e4.js"><link rel="prefetch" href="/yk_manual/assets/js/11.8d113b5a.js"><link rel="prefetch" href="/yk_manual/assets/js/110.89d1c180.js"><link rel="prefetch" href="/yk_manual/assets/js/111.262e9777.js"><link rel="prefetch" href="/yk_manual/assets/js/112.f089f7e0.js"><link rel="prefetch" href="/yk_manual/assets/js/113.6b8025bc.js"><link rel="prefetch" href="/yk_manual/assets/js/114.769a79df.js"><link rel="prefetch" href="/yk_manual/assets/js/115.25e08cbf.js"><link rel="prefetch" href="/yk_manual/assets/js/116.f3d41cd1.js"><link rel="prefetch" href="/yk_manual/assets/js/117.908e745b.js"><link rel="prefetch" href="/yk_manual/assets/js/118.1e3292ce.js"><link rel="prefetch" href="/yk_manual/assets/js/119.c042df0b.js"><link rel="prefetch" href="/yk_manual/assets/js/12.26361350.js"><link rel="prefetch" href="/yk_manual/assets/js/120.8a37d9f0.js"><link rel="prefetch" href="/yk_manual/assets/js/121.ddbed957.js"><link rel="prefetch" href="/yk_manual/assets/js/122.47441221.js"><link rel="prefetch" href="/yk_manual/assets/js/123.91754538.js"><link rel="prefetch" href="/yk_manual/assets/js/124.28cf3045.js"><link rel="prefetch" href="/yk_manual/assets/js/125.bb3ba31a.js"><link rel="prefetch" href="/yk_manual/assets/js/126.c415a703.js"><link rel="prefetch" href="/yk_manual/assets/js/127.da64e53f.js"><link rel="prefetch" href="/yk_manual/assets/js/128.2b2e9527.js"><link rel="prefetch" href="/yk_manual/assets/js/129.fe841012.js"><link rel="prefetch" href="/yk_manual/assets/js/13.be0a436c.js"><link rel="prefetch" href="/yk_manual/assets/js/130.c542b5b1.js"><link rel="prefetch" href="/yk_manual/assets/js/131.e7ec40ca.js"><link rel="prefetch" href="/yk_manual/assets/js/132.9b5eb6ec.js"><link rel="prefetch" href="/yk_manual/assets/js/133.c329cf61.js"><link rel="prefetch" href="/yk_manual/assets/js/134.7480e9ee.js"><link rel="prefetch" href="/yk_manual/assets/js/135.50a63fa2.js"><link rel="prefetch" href="/yk_manual/assets/js/136.5f71be49.js"><link rel="prefetch" href="/yk_manual/assets/js/137.db6bc899.js"><link rel="prefetch" href="/yk_manual/assets/js/138.9eabadc5.js"><link rel="prefetch" href="/yk_manual/assets/js/139.c7ac68e8.js"><link rel="prefetch" href="/yk_manual/assets/js/14.acca63ee.js"><link rel="prefetch" href="/yk_manual/assets/js/140.5652b510.js"><link rel="prefetch" href="/yk_manual/assets/js/141.fa32d9e2.js"><link rel="prefetch" href="/yk_manual/assets/js/142.42cd7d52.js"><link rel="prefetch" href="/yk_manual/assets/js/143.82929412.js"><link rel="prefetch" href="/yk_manual/assets/js/144.ce2d4633.js"><link rel="prefetch" href="/yk_manual/assets/js/145.67328e9d.js"><link rel="prefetch" href="/yk_manual/assets/js/146.dc230736.js"><link rel="prefetch" href="/yk_manual/assets/js/147.5a2429c3.js"><link rel="prefetch" href="/yk_manual/assets/js/148.3ffa225c.js"><link rel="prefetch" href="/yk_manual/assets/js/149.1d8756cc.js"><link rel="prefetch" href="/yk_manual/assets/js/15.7f05ded0.js"><link rel="prefetch" href="/yk_manual/assets/js/150.541fece5.js"><link rel="prefetch" href="/yk_manual/assets/js/151.f74c144c.js"><link rel="prefetch" href="/yk_manual/assets/js/152.7b838815.js"><link rel="prefetch" href="/yk_manual/assets/js/153.9640084a.js"><link rel="prefetch" href="/yk_manual/assets/js/154.92a310f5.js"><link rel="prefetch" href="/yk_manual/assets/js/155.9246949c.js"><link rel="prefetch" href="/yk_manual/assets/js/156.80df7353.js"><link rel="prefetch" href="/yk_manual/assets/js/157.9e6d3ace.js"><link rel="prefetch" href="/yk_manual/assets/js/158.f33b55cd.js"><link rel="prefetch" href="/yk_manual/assets/js/159.5da36d43.js"><link rel="prefetch" href="/yk_manual/assets/js/16.f0cdef46.js"><link rel="prefetch" href="/yk_manual/assets/js/160.42591c34.js"><link rel="prefetch" href="/yk_manual/assets/js/161.405bf49a.js"><link rel="prefetch" href="/yk_manual/assets/js/162.0f5c9e17.js"><link rel="prefetch" href="/yk_manual/assets/js/163.636cc0bb.js"><link rel="prefetch" href="/yk_manual/assets/js/164.9057d3ca.js"><link rel="prefetch" href="/yk_manual/assets/js/165.e66564ea.js"><link rel="prefetch" href="/yk_manual/assets/js/166.6c96f2b5.js"><link rel="prefetch" href="/yk_manual/assets/js/167.ad34e66f.js"><link rel="prefetch" href="/yk_manual/assets/js/168.5f529977.js"><link rel="prefetch" href="/yk_manual/assets/js/169.c5cf2e9f.js"><link rel="prefetch" href="/yk_manual/assets/js/17.62a34f80.js"><link rel="prefetch" href="/yk_manual/assets/js/170.fe0f2359.js"><link rel="prefetch" href="/yk_manual/assets/js/171.a4eaa948.js"><link rel="prefetch" href="/yk_manual/assets/js/172.3bb950aa.js"><link rel="prefetch" href="/yk_manual/assets/js/173.ff4db752.js"><link rel="prefetch" href="/yk_manual/assets/js/174.5d1c5b57.js"><link rel="prefetch" href="/yk_manual/assets/js/175.2ac66192.js"><link rel="prefetch" href="/yk_manual/assets/js/176.0422a154.js"><link rel="prefetch" href="/yk_manual/assets/js/177.533ddb43.js"><link rel="prefetch" href="/yk_manual/assets/js/178.27c780ae.js"><link rel="prefetch" href="/yk_manual/assets/js/179.14bcdfd7.js"><link rel="prefetch" href="/yk_manual/assets/js/18.53949325.js"><link rel="prefetch" href="/yk_manual/assets/js/180.3bb761f0.js"><link rel="prefetch" href="/yk_manual/assets/js/181.3e39d4f9.js"><link rel="prefetch" href="/yk_manual/assets/js/182.256015a1.js"><link rel="prefetch" href="/yk_manual/assets/js/183.05a1f13a.js"><link rel="prefetch" href="/yk_manual/assets/js/185.3f9b0b41.js"><link rel="prefetch" href="/yk_manual/assets/js/186.2002ad95.js"><link rel="prefetch" href="/yk_manual/assets/js/187.6e098027.js"><link rel="prefetch" href="/yk_manual/assets/js/188.8240e812.js"><link rel="prefetch" href="/yk_manual/assets/js/189.11917ed1.js"><link rel="prefetch" href="/yk_manual/assets/js/19.7ffdc525.js"><link rel="prefetch" href="/yk_manual/assets/js/190.8384944c.js"><link rel="prefetch" href="/yk_manual/assets/js/191.b1b8b274.js"><link rel="prefetch" href="/yk_manual/assets/js/192.4df7fb84.js"><link rel="prefetch" href="/yk_manual/assets/js/193.38533a27.js"><link rel="prefetch" href="/yk_manual/assets/js/194.fc9f9fb6.js"><link rel="prefetch" href="/yk_manual/assets/js/195.aa438065.js"><link rel="prefetch" href="/yk_manual/assets/js/196.6e8f17d2.js"><link rel="prefetch" href="/yk_manual/assets/js/197.4969693f.js"><link rel="prefetch" href="/yk_manual/assets/js/198.a86decf5.js"><link rel="prefetch" href="/yk_manual/assets/js/199.c2a026a4.js"><link rel="prefetch" href="/yk_manual/assets/js/20.04ee8563.js"><link rel="prefetch" href="/yk_manual/assets/js/200.9a5a59a9.js"><link rel="prefetch" href="/yk_manual/assets/js/201.6bf4b17f.js"><link rel="prefetch" href="/yk_manual/assets/js/202.13ebb870.js"><link rel="prefetch" href="/yk_manual/assets/js/203.de1b6112.js"><link rel="prefetch" href="/yk_manual/assets/js/204.fefb9db2.js"><link rel="prefetch" href="/yk_manual/assets/js/205.c8447473.js"><link rel="prefetch" href="/yk_manual/assets/js/206.a460a4ff.js"><link rel="prefetch" href="/yk_manual/assets/js/207.2acb1e5d.js"><link rel="prefetch" href="/yk_manual/assets/js/208.35b09e20.js"><link rel="prefetch" href="/yk_manual/assets/js/209.d38d7b8b.js"><link rel="prefetch" href="/yk_manual/assets/js/21.74669ef1.js"><link rel="prefetch" href="/yk_manual/assets/js/210.e45d2474.js"><link rel="prefetch" href="/yk_manual/assets/js/211.31fe7c76.js"><link rel="prefetch" href="/yk_manual/assets/js/212.1a87fd18.js"><link rel="prefetch" href="/yk_manual/assets/js/213.89b9a296.js"><link rel="prefetch" href="/yk_manual/assets/js/214.dea6baf1.js"><link rel="prefetch" href="/yk_manual/assets/js/215.d47b6025.js"><link rel="prefetch" href="/yk_manual/assets/js/216.b313d752.js"><link rel="prefetch" href="/yk_manual/assets/js/217.efa9283a.js"><link rel="prefetch" href="/yk_manual/assets/js/218.b2b8b8f1.js"><link rel="prefetch" href="/yk_manual/assets/js/219.0bf25be1.js"><link rel="prefetch" href="/yk_manual/assets/js/22.079f8482.js"><link rel="prefetch" href="/yk_manual/assets/js/220.9bce5bc3.js"><link rel="prefetch" href="/yk_manual/assets/js/221.e9e45caf.js"><link rel="prefetch" href="/yk_manual/assets/js/222.f7bef91e.js"><link rel="prefetch" href="/yk_manual/assets/js/223.b8e3047b.js"><link rel="prefetch" href="/yk_manual/assets/js/224.cbd138f1.js"><link rel="prefetch" href="/yk_manual/assets/js/225.8ef57c10.js"><link rel="prefetch" href="/yk_manual/assets/js/226.b59139e4.js"><link rel="prefetch" href="/yk_manual/assets/js/227.de181615.js"><link rel="prefetch" href="/yk_manual/assets/js/228.b8e2fa6e.js"><link rel="prefetch" href="/yk_manual/assets/js/229.87afea54.js"><link rel="prefetch" href="/yk_manual/assets/js/23.7fbb131d.js"><link rel="prefetch" href="/yk_manual/assets/js/230.bfc7254c.js"><link rel="prefetch" href="/yk_manual/assets/js/231.c93f0a54.js"><link rel="prefetch" href="/yk_manual/assets/js/232.8f74cc84.js"><link rel="prefetch" href="/yk_manual/assets/js/233.de8dc419.js"><link rel="prefetch" href="/yk_manual/assets/js/234.4fe8c045.js"><link rel="prefetch" href="/yk_manual/assets/js/235.96407c90.js"><link rel="prefetch" href="/yk_manual/assets/js/236.bfdf9a28.js"><link rel="prefetch" href="/yk_manual/assets/js/237.9c3ad4c8.js"><link rel="prefetch" href="/yk_manual/assets/js/238.ef5f34b3.js"><link rel="prefetch" href="/yk_manual/assets/js/239.705fc1c2.js"><link rel="prefetch" href="/yk_manual/assets/js/24.b4ce6d5d.js"><link rel="prefetch" href="/yk_manual/assets/js/240.ffe4c007.js"><link rel="prefetch" href="/yk_manual/assets/js/241.6fabd329.js"><link rel="prefetch" href="/yk_manual/assets/js/242.a661af8a.js"><link rel="prefetch" href="/yk_manual/assets/js/243.7ab1456f.js"><link rel="prefetch" href="/yk_manual/assets/js/244.20bb359a.js"><link rel="prefetch" href="/yk_manual/assets/js/245.3de39fb7.js"><link rel="prefetch" href="/yk_manual/assets/js/246.ba860037.js"><link rel="prefetch" href="/yk_manual/assets/js/247.7b2bd330.js"><link rel="prefetch" href="/yk_manual/assets/js/248.803aada4.js"><link rel="prefetch" href="/yk_manual/assets/js/249.bab59e87.js"><link rel="prefetch" href="/yk_manual/assets/js/25.b21145d4.js"><link rel="prefetch" href="/yk_manual/assets/js/250.9c137daf.js"><link rel="prefetch" href="/yk_manual/assets/js/251.4604b058.js"><link rel="prefetch" href="/yk_manual/assets/js/252.80466c1f.js"><link rel="prefetch" href="/yk_manual/assets/js/253.d8bc836a.js"><link rel="prefetch" href="/yk_manual/assets/js/254.1966098d.js"><link rel="prefetch" href="/yk_manual/assets/js/255.1d46c2b7.js"><link rel="prefetch" href="/yk_manual/assets/js/256.c85398e6.js"><link rel="prefetch" href="/yk_manual/assets/js/257.3f9ef502.js"><link rel="prefetch" href="/yk_manual/assets/js/258.d2b6d9b5.js"><link rel="prefetch" href="/yk_manual/assets/js/259.19e15ad7.js"><link rel="prefetch" href="/yk_manual/assets/js/26.de26e94a.js"><link rel="prefetch" href="/yk_manual/assets/js/260.47f48cb7.js"><link rel="prefetch" href="/yk_manual/assets/js/261.cb6c9914.js"><link rel="prefetch" href="/yk_manual/assets/js/262.1e82e307.js"><link rel="prefetch" href="/yk_manual/assets/js/263.31423df3.js"><link rel="prefetch" href="/yk_manual/assets/js/264.8faf6871.js"><link rel="prefetch" href="/yk_manual/assets/js/27.e0556273.js"><link rel="prefetch" href="/yk_manual/assets/js/28.8217e818.js"><link rel="prefetch" href="/yk_manual/assets/js/29.a7a9f6ed.js"><link rel="prefetch" href="/yk_manual/assets/js/30.ac3dd1f8.js"><link rel="prefetch" href="/yk_manual/assets/js/31.4de37d9e.js"><link rel="prefetch" href="/yk_manual/assets/js/32.44a80f37.js"><link rel="prefetch" href="/yk_manual/assets/js/33.6f61fa05.js"><link rel="prefetch" href="/yk_manual/assets/js/34.636c8ed2.js"><link rel="prefetch" href="/yk_manual/assets/js/35.dc841fa3.js"><link rel="prefetch" href="/yk_manual/assets/js/36.d23c3e4c.js"><link rel="prefetch" href="/yk_manual/assets/js/37.73ef5b7c.js"><link rel="prefetch" href="/yk_manual/assets/js/38.28953b54.js"><link rel="prefetch" href="/yk_manual/assets/js/39.223d3138.js"><link rel="prefetch" href="/yk_manual/assets/js/4.c8fb5d72.js"><link rel="prefetch" href="/yk_manual/assets/js/40.fbfec044.js"><link rel="prefetch" href="/yk_manual/assets/js/41.800917b8.js"><link rel="prefetch" href="/yk_manual/assets/js/42.90fcf4eb.js"><link rel="prefetch" href="/yk_manual/assets/js/43.93840981.js"><link rel="prefetch" href="/yk_manual/assets/js/44.8e504f4c.js"><link rel="prefetch" href="/yk_manual/assets/js/45.30e3ecf7.js"><link rel="prefetch" href="/yk_manual/assets/js/46.cc1c3c1c.js"><link rel="prefetch" href="/yk_manual/assets/js/47.7d4b6835.js"><link rel="prefetch" href="/yk_manual/assets/js/48.e7cf8c2f.js"><link rel="prefetch" href="/yk_manual/assets/js/49.9a203147.js"><link rel="prefetch" href="/yk_manual/assets/js/5.38e49e2b.js"><link rel="prefetch" href="/yk_manual/assets/js/50.715f4205.js"><link rel="prefetch" href="/yk_manual/assets/js/51.68432342.js"><link rel="prefetch" href="/yk_manual/assets/js/52.383740bb.js"><link rel="prefetch" href="/yk_manual/assets/js/53.d20fc45b.js"><link rel="prefetch" href="/yk_manual/assets/js/54.3a91c877.js"><link rel="prefetch" href="/yk_manual/assets/js/55.81d7cc8c.js"><link rel="prefetch" href="/yk_manual/assets/js/56.8cf81605.js"><link rel="prefetch" href="/yk_manual/assets/js/57.a41572ff.js"><link rel="prefetch" href="/yk_manual/assets/js/58.f8ff56b7.js"><link rel="prefetch" href="/yk_manual/assets/js/59.ea670ed3.js"><link rel="prefetch" href="/yk_manual/assets/js/6.656ce09e.js"><link rel="prefetch" href="/yk_manual/assets/js/60.0db1c5c3.js"><link rel="prefetch" href="/yk_manual/assets/js/61.1e4bde04.js"><link rel="prefetch" href="/yk_manual/assets/js/62.d787aa69.js"><link rel="prefetch" href="/yk_manual/assets/js/63.c37c9ffc.js"><link rel="prefetch" href="/yk_manual/assets/js/64.78b47d0e.js"><link rel="prefetch" href="/yk_manual/assets/js/65.f3b2b700.js"><link rel="prefetch" href="/yk_manual/assets/js/66.03968d86.js"><link rel="prefetch" href="/yk_manual/assets/js/67.d089aa3f.js"><link rel="prefetch" href="/yk_manual/assets/js/68.c115a8c8.js"><link rel="prefetch" href="/yk_manual/assets/js/69.c1a2722a.js"><link rel="prefetch" href="/yk_manual/assets/js/7.79bee4d1.js"><link rel="prefetch" href="/yk_manual/assets/js/70.7b2ad873.js"><link rel="prefetch" href="/yk_manual/assets/js/71.4155becb.js"><link rel="prefetch" href="/yk_manual/assets/js/72.14495a90.js"><link rel="prefetch" href="/yk_manual/assets/js/73.ac817f7f.js"><link rel="prefetch" href="/yk_manual/assets/js/74.74770b96.js"><link rel="prefetch" href="/yk_manual/assets/js/75.106557c3.js"><link rel="prefetch" href="/yk_manual/assets/js/76.1575170f.js"><link rel="prefetch" href="/yk_manual/assets/js/77.9de699f2.js"><link rel="prefetch" href="/yk_manual/assets/js/78.9746f0d1.js"><link rel="prefetch" href="/yk_manual/assets/js/79.a78e5adc.js"><link rel="prefetch" href="/yk_manual/assets/js/8.8b07aad3.js"><link rel="prefetch" href="/yk_manual/assets/js/80.5569987c.js"><link rel="prefetch" href="/yk_manual/assets/js/81.03807b1e.js"><link rel="prefetch" href="/yk_manual/assets/js/82.993a3723.js"><link rel="prefetch" href="/yk_manual/assets/js/83.45b8219b.js"><link rel="prefetch" href="/yk_manual/assets/js/84.bb6839e1.js"><link rel="prefetch" href="/yk_manual/assets/js/85.682228fd.js"><link rel="prefetch" href="/yk_manual/assets/js/86.c22b3a05.js"><link rel="prefetch" href="/yk_manual/assets/js/87.7cf40bc0.js"><link rel="prefetch" href="/yk_manual/assets/js/88.22f41047.js"><link rel="prefetch" href="/yk_manual/assets/js/89.2e1337dc.js"><link rel="prefetch" href="/yk_manual/assets/js/90.62c2de78.js"><link rel="prefetch" href="/yk_manual/assets/js/91.3cbcc56d.js"><link rel="prefetch" href="/yk_manual/assets/js/92.4b76c35c.js"><link rel="prefetch" href="/yk_manual/assets/js/93.6d7c48af.js"><link rel="prefetch" href="/yk_manual/assets/js/94.cbb3692f.js"><link rel="prefetch" href="/yk_manual/assets/js/95.ba6e311f.js"><link rel="prefetch" href="/yk_manual/assets/js/96.1fbba610.js"><link rel="prefetch" href="/yk_manual/assets/js/97.49354f13.js"><link rel="prefetch" href="/yk_manual/assets/js/98.649e4677.js"><link rel="prefetch" href="/yk_manual/assets/js/99.da2ca105.js">
+    <link rel="stylesheet" href="/yk_manual/assets/css/0.styles.ac71bee4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>YK菌</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2></p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2023
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yk_manual/" class="home-link router-link-active"><!----> <span class="site-name">YK菌</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/yk_manual/basics/" class="nav-link"><i class="undefined"></i>
+  基础知识
+</a></div><div class="nav-item"><a href="/yk_manual/fe_advance/" class="nav-link router-link-active"><i class="undefined"></i>
+  前端进阶
+</a></div><div class="nav-item"><a href="/yk_manual/fe_engineering/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></div><div class="nav-item"><a href="/yk_manual/fe_code/" class="nav-link"><i class="undefined"></i>
+  技术内功
+</a></div><div class="nav-item"><a href="/yk_manual/code_life/" class="nav-link"><i class="undefined"></i>
+  代码人生
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      关注我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/yk2012" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ykang2020" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/2409780510207133/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_44972008" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>92</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/yk_manual/basics/" class="nav-link"><i class="undefined"></i>
+  基础知识
+</a></div><div class="nav-item"><a href="/yk_manual/fe_advance/" class="nav-link router-link-active"><i class="undefined"></i>
+  前端进阶
+</a></div><div class="nav-item"><a href="/yk_manual/fe_engineering/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></div><div class="nav-item"><a href="/yk_manual/fe_code/" class="nav-link"><i class="undefined"></i>
+  技术内功
+</a></div><div class="nav-item"><a href="/yk_manual/code_life/" class="nav-link"><i class="undefined"></i>
+  代码人生
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      关注我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/yk2012" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ykang2020" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/2409780510207133/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_44972008" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/yk_manual/fe_advance/typescript" class="sidebar-heading clickable open"><span>typescript</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/yk_manual/fe_advance/typescript/basics/01概述" class="sidebar-heading clickable open"><span>基础知识</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/yk_manual/fe_advance/typescript/basics/01概述.html" class="sidebar-link">概述</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/02类型声明.html" class="sidebar-link">类型声明</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/03枚举类型.html" class="sidebar-link">枚举类型</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/04配置选项.html" class="sidebar-link">配置选项</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/05webpack配置.html" class="sidebar-link">webpack配置</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/06面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/07接口.html" class="sidebar-link">接口</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/08泛型.html" class="sidebar-link">泛型</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/09类型检查机制.html" class="sidebar-link">类型检查机制</a></li><li><a href="/yk_manual/fe_advance/typescript/basics/10高级类型.html" class="sidebar-link">高级类型</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/yk_manual/fe_advance/typescript/type_challenges/01为什么叫类型体操" class="sidebar-heading clickable"><span>类型体操</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/yk_manual/fe_advance/typescript/project/01Vue项目" class="sidebar-heading clickable"><span>TS实战</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/yk_manual/fe_advance/Vue" class="sidebar-heading clickable router-link-active"><span>Vue</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/yk_manual/fe_advance/React" class="sidebar-heading clickable"><span>React</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2023
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title"></h1> <div data-v-f875f3fc><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><blockquote><p>我们在使用Vue时，只需要修改数据，视图就会自动更新，这就是数据响应
+今天来学习Vue实现数据响应式的原理~</p></blockquote> <p>源码链接 <a href="https://gitee.com/ykang2020/vue_learn" target="_blank" rel="noopener noreferrer">https://gitee.com/ykang2020/vue_learn<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>前置知识 <code>Object.defineProperty()</code> 可以参考之前的博文
+<a href="https://blog.csdn.net/weixin_44972008/article/details/113686598" target="_blank" rel="noopener noreferrer">【JS】JavaScript对象属性-属性类型-数据属性-访问器属性-Object.defineProperty()方法-get方法-set方法<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>用<code>getter</code>和<code>setter</code>方法可以对数据进行监听，访问和设置都会被监听捕获
+读取数据的时候会触发getter，而修改数据的时候会触发setter</p> <h1 id="_1-定义-definereactive-函数"><a href="#_1-定义-definereactive-函数" class="header-anchor">#</a> 1. 定义 defineReactive 函数</h1> <h2 id="_1-1-why-临时变量"><a href="#_1-1-why-临时变量" class="header-anchor">#</a> 1.1 Why (临时变量)</h2> <p>我们要进行数据劫持，先想到的就是<code>Object.defineProperty()</code>中给属性添加<code>getter</code>和<code>setter</code>方法，但是这么做有点问题~</p> <p><code>defineProperty()</code> 方法需要<strong>临时的全局变量</strong>周转<code>getter</code>和<code>setter</code></p> <p>我们来看下面这个例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> temp<span class="token punctuation">;</span>
+
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;getter试图访问obj的a属性&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;setter试图改变obj的a属性&quot;</span><span class="token punctuation">,</span> newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    temp <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">5</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed9761c62812412985ae0bfbccc42ec7~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h2 id="_1-2-how-闭包"><a href="#_1-2-how-闭包" class="header-anchor">#</a> 1.2 How (闭包)</h2> <p>所以我们就自己定义一个函数，对<code>defineProperty</code>进行封装，来实现数据劫持</p> <p>使用<code>defineReactive</code> 函数不需要设置临时变量了，而是用<strong>闭包</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可枚举 可以for-in</span>
+    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 可被配置，比如可以被delete</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// getter</span>
+    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">getter试图访问obj的</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// setter</span>
+    <span class="token function">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">setter试图改变obj的</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">===</span> newValue<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 初始化</span>
+<span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8eef3ed241124a5384c2160001493cbf~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h1 id="_2-对象的响应式处理-递归侦测对象全部属性-object"><a href="#_2-对象的响应式处理-递归侦测对象全部属性-object" class="header-anchor">#</a> 2. 对象的响应式处理——递归侦测对象全部属性 object</h1> <h2 id="_2-1-why-嵌套"><a href="#_2-1-why-嵌套" class="header-anchor">#</a> 2.1 Why （嵌套）</h2> <p>上面定义的<code>defineProperty()</code>函数，不能监听到对象嵌套的形式</p> <p>也就是对象嵌套对象</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可枚举 可以for-in</span>
+    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 可被配置，比如可以被delete</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// getter</span>
+    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">getter试图访问obj的</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// setter</span>
+    <span class="token function">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">setter试图改变obj的</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">===</span> newValue<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">d</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 初始化</span>
+<span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>b<span class="token punctuation">.</span>c<span class="token punctuation">.</span>d<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这里显示没有监听到内部(obj.b.c.d)
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7934ac982968457cae03a729eda6a4e0~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h2 id="_2-2-how-递归"><a href="#_2-2-how-递归" class="header-anchor">#</a> 2.2 How（递归）</h2> <p>所以我们要创建一个<code>Observer</code>类 ——&gt; 将一个正常的object转换为每个层级的属性都是响应式（可以被侦测）的object</p> <p>遍历对象</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d567483fcaf48cc9eb6dc2b1bd8637e~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h3 id="observe-js"><a href="#observe-js" class="header-anchor">#</a> observe.js</h3> <blockquote><p>监听 value
+尝试创建Observer实例，如果value已经是响应式数据，就不需要再创建Observer实例，直接返回已经创建的Observer实例即可，避免重复侦测value变化的问题</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Observer <span class="token keyword">from</span> <span class="token string">&quot;./Observer&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 监听 value
+ * @param {*} value 
+ * @returns 
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">observe</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 如果value不是对象，就什么都不做</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> value <span class="token operator">!=</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> ob<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> value<span class="token punctuation">.</span>__ob__ <span class="token operator">!==</span> <span class="token string">&quot;undefined&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ob <span class="token operator">=</span> value<span class="token punctuation">.</span>__ob__<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    ob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Observer</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> ob<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="observer-js"><a href="#observer-js" class="header-anchor">#</a> Observer.js</h3> <blockquote><p>将一个正常的object转换为每个层级的属性都是响应式（可以被侦测）的object</p></blockquote> <blockquote><p>Observer 类会附加到每一个被侦测的object上
+一旦被附加，Observer会将object所有属性转换成getter/setter的形式</p></blockquote> <blockquote><p>__ob__的作用可以用来标记当前value是否已经被Observer转换成了响应式数据了；而且可以通过value.__ob__来访问Observer的实例</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> def <span class="token keyword">from</span> <span class="token string">&quot;./def&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> defineReactive <span class="token keyword">from</span> <span class="token string">&quot;./defineReactive&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 将一个正常的object转换为每个层级的属性都是响应式（可以被侦测）的object
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Observer</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 构造器</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 给实例添加__ob__属性，值是当前Observer的实例，不可枚举</span>
+    <span class="token function">def</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> <span class="token string">&quot;__ob__&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Observer构造器&quot;</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// 将一个正常的object转换为每个层级的属性都是响应式（可以被侦测）的object</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">walk</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 遍历value的每一个key</span>
+  <span class="token function">walk</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">defineReactive</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="def-js"><a href="#def-js" class="header-anchor">#</a> def.js</h3> <blockquote><p>工具方法 定义一个对象属性</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * 定义一个对象属性
+ * @param {*} obj 
+ * @param {*} key 
+ * @param {*} value 
+ * @param {*} enumerable 
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">def</span><span class="token punctuation">(</span><span class="token parameter">obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> enumerable</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">,</span>
+    enumerable<span class="token punctuation">,</span>
+    <span class="token literal-property property">writable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="definereactive-js"><a href="#definereactive-js" class="header-anchor">#</a> defineReactive.js</h3> <blockquote><p>给对象data的属性key定义监听</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> observe <span class="token keyword">from</span> <span class="token string">&quot;./observe&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 给对象data的属性key定义监听
+ * @param {*} data 传入的数据
+ * @param {*} key 监听的属性
+ * @param {*} value 闭包环境提供的周转变量
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'defineReactive()'</span><span class="token punctuation">,</span> data<span class="token punctuation">,</span>key<span class="token punctuation">,</span>value<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token comment">// 子元素要进行observe，形成递归</span>
+  <span class="token keyword">let</span> childOb <span class="token operator">=</span> <span class="token function">observe</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+  
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可枚举 可以for-in</span>
+    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 可被配置，比如可以被delete</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// getter</span>
+    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">getter试图访问</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// setter</span>
+    <span class="token function">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">setter试图改变</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">===</span> newValue<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+      
+      <span class="token comment">// 当设置了新值，新值也要被observe</span>
+      childOb <span class="token operator">=</span> <span class="token function">observe</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>文件之间的依赖结构
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a62ee9381bd14720907c9c3de891f60b~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述">
+三个函数互相调用形成了递归
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/62fd4479c59349f38461781e3e883fa9~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <p>处理完对象，如果嵌套的是数组怎么办，下面我们来看看数组是怎么处理的</p> <h2 id="_2-3-测试"><a href="#_2-3-测试" class="header-anchor">#</a> 2.3 测试</h2> <h3 id="index-js"><a href="#index-js" class="header-anchor">#</a> index.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> observe <span class="token keyword">from</span> <span class="token string">&quot;./observe&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">d</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>b<span class="token punctuation">.</span>c<span class="token punctuation">.</span>d <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3eb2eb7695b24a7bb59462443ec83e94~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h1 id="_3-数组的响应式处理"><a href="#_3-数组的响应式处理" class="header-anchor">#</a> 3. 数组的响应式处理</h1> <p>正因为我们可以通过Array原型上的方法来改变数组的内容，所以ojbect那种通过getter/setter的实现方式就行不通了。</p> <p>ES6之前没有提供可以拦截原型方法的能力，我们可以用自定义的方法去覆盖原生的原型方法。</p> <p>Vue是通过改写数组的七个方法（可以改变数组自身内容的方法）来实现对数组的响应式处理</p> <p>这些方法分别是：<code>push</code>、<code>pop</code>、<code>shift</code>、<code>unshift</code>、<code>splice</code>、<code>sort</code>、<code>reverse</code> <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ef7205303d624f1899e60ecb237a12af~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <p>这七个方法都是定义在<code>Array.prototype</code>上，要保留方法的功能，同时增加数据劫持的代码</p> <p>思路就是 以<code>Array.prototype为</code>原型，创建一个新对象<code>arrayMthods</code>
+然后在新对象<code>arrayMthods</code>上定义（改写）这些方法
+定义 数组 的原型指向 <code>arrayMthods</code></p> <p>这就相当于用一个<strong>拦截器</strong>覆盖<code>Array.prototype</code>，每当使用<code>Array</code>原型上的方法操作数组时，其实执行的是拦截器中提供的方法。在拦截器中使用原生<code>Array</code>的原型方法去操作数组。</p> <h2 id="_3-1-前置知识"><a href="#_3-1-前置知识" class="header-anchor">#</a> 3.1 前置知识</h2> <h3 id="object-setprototypeof-修改对象原型"><a href="#object-setprototypeof-修改对象原型" class="header-anchor">#</a> <code>Object.setPrototypeOf()</code> 修改对象原型</h3> <blockquote><p>Object.setPrototypeOf() 方法设置一个指定的对象的原型 ( 即, 内部[[Prototype]]属性）到另一个对象或null</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> prototype<span class="token punctuation">)</span>
+</code></pre></div><p><code>obj</code> 要设置其原型的对象
+<code>prototype</code> 该对象的新原型(一个对象 或 null)</p> <h3 id="object-create-创建一个新对象"><a href="#object-create-创建一个新对象" class="header-anchor">#</a> <code>Object.create()</code> 创建一个新对象</h3> <blockquote><p>Object.create()方法创建一个新对象，使用现有的对象来提供新创建的对象的__proto__</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code>Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>proto，<span class="token punctuation">[</span>propertiesObject<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><p><code>proto</code> 新创建对象的原型对象。
+<code>propertiesObject</code> 可选。需要传入一个对象，该对象的属性类型参照Object.defineProperties()的第二个参数。如果该参数被指定且不为 undefined，该传入对象的自有可枚举属性(即其自身定义的属性，而不是其原型链上的枚举属性)将为新创建的对象添加指定的属性值和对应的属性描述符。</p> <p><code>返回</code> 一个新对象，带着指定的原型对象和属性。</p> <h2 id="_3-2-实现"><a href="#_3-2-实现" class="header-anchor">#</a> 3.2 实现</h2> <h3 id="array-js"><a href="#array-js" class="header-anchor">#</a> array.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> def <span class="token keyword">from</span> <span class="token string">&quot;./def&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> arrayPrototype <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+
+<span class="token comment">// 以Array.prototype为原型创建arrayMethod</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> arrayMethods <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>arrayPrototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 要被改写的7个数组方法</span>
+<span class="token keyword">const</span> methodsNeedChange <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&quot;push&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;pop&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;shift&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;unshift&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;splice&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;sort&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;reverse&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 批量操作这些方法</span>
+methodsNeedChange<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">methodName</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 备份原来的方法</span>
+  <span class="token keyword">const</span> original <span class="token operator">=</span> arrayPrototype<span class="token punctuation">[</span>methodName<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 定义新的方法</span>
+  <span class="token function">def</span><span class="token punctuation">(</span>
+    arrayMethods<span class="token punctuation">,</span>
+    methodName<span class="token punctuation">,</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;array数据已经被劫持&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 恢复原来的功能(数组方法)</span>
+      <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">original</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 把类数组对象变成数组</span>
+      <span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 把这个数组身上的__ob__取出来</span>
+      <span class="token comment">// 在拦截器中获取Observer的实例</span>
+      <span class="token keyword">const</span> ob <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>__ob__<span class="token punctuation">;</span>
+
+      <span class="token comment">// 有三种方法 push、unshift、splice能插入新项，要劫持（侦测）这些数据（插入新项）</span>
+      <span class="token keyword">let</span> inserted <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">switch</span> <span class="token punctuation">(</span>methodName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;push&quot;</span><span class="token operator">:</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;unshift&quot;</span><span class="token operator">:</span>
+          inserted <span class="token operator">=</span> args<span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;splice&quot;</span><span class="token operator">:</span>
+          inserted <span class="token operator">=</span> args<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// 查看有没有新插入的项inserted，有的话就劫持</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>inserted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ob<span class="token punctuation">.</span><span class="token function">observeArray</span><span class="token punctuation">(</span>inserted<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token boolean">false</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="observer-js-2"><a href="#observer-js-2" class="header-anchor">#</a> Observer.js</h3> <blockquote><p>__ob__的作用可以用来标记当前value是否已经被Observer转换成了响应式数据了
+而且可以通过value.__ob__来访问Observer的实例</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> def <span class="token keyword">from</span> <span class="token string">&quot;./def&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> defineReactive <span class="token keyword">from</span> <span class="token string">&quot;./defineReactive&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> observe <span class="token keyword">from</span> <span class="token string">&quot;./observe&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>arrayMethods<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./array'</span>
+<span class="token comment">/**
+ * 将一个正常的object转换为每个层级的属性都是响应式（可以被侦测）的object
+ * Observer 类会附加到每一个被侦测的object上
+ * 一旦被附加，Observer会将object所有属性转换成getter/setter的形式
+ * 来收集属性的依赖，并且当属性发生变化时会通知这些依赖
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Observer</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 构造器</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+    <span class="token comment">// 给实例添加__ob__属性，值是当前Observer的实例，不可枚举</span>
+    <span class="token function">def</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> <span class="token string">&quot;__ob__&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// __ob__的作用可以用来标记当前value是否已经被Observer转换成了响应式数据了；而且可以通过value.__ob__来访问Observer的实例</span>
+    
+    <span class="token comment">// console.log(&quot;Observer构造器&quot;, value);</span>
+    <span class="token comment">// 判断是数组还是对象</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 是数组，就将这个数组的原型指向arrayMethods</span>
+      Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> arrayMethods<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 早期实现是这样</span>
+      <span class="token comment">// value.__proto__ = arrayMethods;</span>
+      
+      <span class="token comment">// observe数组</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">observeArray</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">walk</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 对象的遍历方式 遍历value的每一个key</span>
+  <span class="token function">walk</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">defineReactive</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 数组的遍历方式</span>
+  <span class="token function">observeArray</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 逐项进行observe</span>
+      <span class="token function">observe</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h1 id="_4-收集依赖"><a href="#_4-收集依赖" class="header-anchor">#</a> 4. 收集依赖</h1> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f12cc1711b574071b1d7293aa46aa84f~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h2 id="_4-1-why-为什么要收集依赖"><a href="#_4-1-why-为什么要收集依赖" class="header-anchor">#</a> 4.1 Why 为什么要收集依赖</h2> <p>之所以要劫持数据，目的是当数据的属性发生变化时，可以通知那些曾经用到的该数据的地方。</p> <p>先收集依赖，把用到数据的地方收集起来，等属性改变，在之前收集好的依赖中循环触发一遍就好了~</p> <p>总结起来就是
+对象是
+<strong>在getter中收集依赖，在setter中触发依赖</strong>
+而数组是
+<strong>在getter中收集依赖，在拦截器中触发依赖</strong></p> <h2 id="_4-2-how-怎么收集依赖"><a href="#_4-2-how-怎么收集依赖" class="header-anchor">#</a> 4.2 How 怎么收集依赖</h2> <h3 id="依赖收集到哪里-dep"><a href="#依赖收集到哪里-dep" class="header-anchor">#</a> 依赖收集到哪里？ Dep</h3> <p>目标明确，我们要在 <code>getter</code> 中收集依赖，那 依赖收集到哪里？</p> <p>将依赖收集封装成一个类 <code>Dep</code> 这个类帮我们管理依赖
+可以收集依赖、删除依赖、向依赖发送通知</p> <h3 id="依赖是什么-watcher"><a href="#依赖是什么-watcher" class="header-anchor">#</a> 依赖是什么？Watcher</h3> <p>需要用到数据的地方，成为依赖，就是<code>Watcher</code></p> <p>只有<code>Watcher</code> 触发的 <code>getter</code> 才会收集依赖，哪个<code>Watcher</code>触发了<code>getter</code>，就把哪个<code>Watcher</code> 收集到<code>Dep</code> 中</p> <p><code>Dep</code> 使用发布订阅模式，当数据发生变化时，会循环依赖列表，把所有的<code>Watcher</code> 都通知一遍。</p> <p><code>Watcher</code>是一个中介的角色，数据发生变化时通知它，然后它再通知其他地方</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/99b16f5627884bdb980bf76fb0cba54e~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b3a670c2d184b73aa90435e225df22c~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <h2 id="_4-3-实现"><a href="#_4-3-实现" class="header-anchor">#</a> 4.3 实现</h2> <p>代码实现的巧妙之处：<code>Watcher</code> 把自己设置到全局的一个指定位置，然后读取数据。
+因为读取了数据，所以会触发这个数据的<code>getter</code> 。在<code>getter</code> 中就能得到当前正在读取数据的<code>Watcher</code>，并把这个<code>Watcher</code>收集到<code>Dep</code> 中。</p> <p>需要用一个数组来存watcher
+watcher实例需要订阅 依赖（数据），也就是获取依赖或者收集依赖
+watcher的依赖发生时，触发watcher的回调函数，也就是派发更新</p> <h3 id="dep-js"><a href="#dep-js" class="header-anchor">#</a> Dep.js</h3> <p><code>Dep</code> 使用发布订阅模式，当数据发生变化时，会循环依赖列表，把所有的<code>Watcher</code> 都通知一遍。</p> <blockquote><p>Dep类专门帮助我们管理依赖，可以收集依赖，删除依赖，向依赖发送通知等</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> uid <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * Dep类专门帮助我们管理依赖，可以收集依赖，删除依赖，向依赖发送通知等
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Dep</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Dep&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> uid<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token comment">// 用数组存储自己的订阅者，放的是Watcher的实例</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 添加订阅</span>
+  <span class="token function">addSub</span><span class="token punctuation">(</span><span class="token parameter">sub</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 删除订阅</span>
+  <span class="token function">removeSub</span><span class="token punctuation">(</span><span class="token parameter">sub</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">,</span> sub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 添加依赖</span>
+  <span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Dep.target 是一个我们指定的全局的位置，用window.target也行，只要是全局唯一，没有歧义就行</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Dep<span class="token punctuation">.</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span>Dep<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 通知更新</span>
+  <span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;notify&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 浅拷贝一份</span>
+    <span class="token keyword">const</span> subs <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>subs<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 遍历</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> subs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      subs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 从arr数组中删除元素item
+ * @param {*} arr 
+ * @param {*} item
+ * @returns 
+ */</span>
+<span class="token keyword">function</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> index <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="watcher-js"><a href="#watcher-js" class="header-anchor">#</a> Watcher.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Dep <span class="token keyword">from</span> <span class="token string">&quot;./Dep&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> uid <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * Watcher是一个中介的角色，数据发生变化时通知它，然后它再通知其他地方
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Watcher</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">target<span class="token punctuation">,</span> expression<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Watcher&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> uid<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>target <span class="token operator">=</span> target<span class="token punctuation">;</span>
+    <span class="token comment">// 按点拆分  执行this.getter()就可以读取data.a.b.c的内容</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>getter <span class="token operator">=</span> <span class="token function">parsePath</span><span class="token punctuation">(</span>expression<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>callback <span class="token operator">=</span> callback<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 进入依赖收集阶段。</span>
+    <span class="token comment">// 让全局的Dep.target设置为Watcher本身</span>
+    Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+    <span class="token keyword">var</span> value<span class="token punctuation">;</span>
+    <span class="token comment">// 只要能找就一直找</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getter</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+      Dep<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> 
+
+  <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getAndInvoke</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">getAndInvoke</span><span class="token punctuation">(</span><span class="token parameter">callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">!==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">||</span> <span class="token keyword">typeof</span> value <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> oldValue <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+      <span class="token function">callback</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>target<span class="token punctuation">,</span> value<span class="token punctuation">,</span> oldValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 将str用.分割成数组segments，然后循环数组，一层一层去读取数据，最后拿到的obj就是str中想要读的数据
+ * @param {*} str
+ * @returns
+ */</span>
+<span class="token keyword">function</span> <span class="token function">parsePath</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> segments <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">of</span> segments<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>obj<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      obj <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="definereactive-js-2"><a href="#definereactive-js-2" class="header-anchor">#</a> defineReactive.js</h3> <p>对象<strong>在getter中收集依赖，在setter中触发依赖</strong>
+数组<strong>在getter中收集依赖，在拦截器中触发依赖</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Dep <span class="token keyword">from</span> <span class="token string">&quot;./Dep&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> observe <span class="token keyword">from</span> <span class="token string">&quot;./observe&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 给对象data的属性key定义监听
+ * @param {*} data 传入的数据
+ * @param {*} key 监听的属性
+ * @param {*} value 闭包环境提供的周转变量
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">defineReactive</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+  <span class="token comment">// 每个数据都要维护一个属于自己的数组，用来存放依赖自己的watcher</span>
+  <span class="token keyword">const</span> dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dep</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// console.log('defineReactive()', data,key,value)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 子元素要进行observe，形成递归</span>
+  <span class="token keyword">let</span> childOb <span class="token operator">=</span> <span class="token function">observe</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可枚举 可以for-in</span>
+    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 可被配置，比如可以被delete</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// getter  收集依赖</span>
+    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">getter试图访问</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 收集依赖</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>Dep<span class="token punctuation">.</span>target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dep<span class="token punctuation">.</span><span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 判断有没有子元素</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>childOb<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 数组收集依赖</span>
+          childOb<span class="token punctuation">.</span>dep<span class="token punctuation">.</span><span class="token function">depend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// setter 触发依赖</span>
+    <span class="token function">set</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">setter试图改变</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">属性</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">===</span> newValue<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+
+      <span class="token comment">// 当设置了新值，新值也要被observe</span>
+      childOb <span class="token operator">=</span> <span class="token function">observe</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 触发依赖</span>
+      <span class="token comment">// 发布订阅模式，通知dep</span>
+      dep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="array-js-2"><a href="#array-js-2" class="header-anchor">#</a> array.js</h3> <p>数组<strong>在getter中收集依赖，在拦截器中触发依赖</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> def <span class="token keyword">from</span> <span class="token string">&quot;./def&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> arrayPrototype <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+
+<span class="token comment">// 以Array.prototype为原型创建arrayMethod</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> arrayMethods <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>arrayPrototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 要被改写的7个数组方法</span>
+<span class="token keyword">const</span> methodsNeedChange <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&quot;push&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;pop&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;shift&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;unshift&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;splice&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;sort&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;reverse&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 批量操作这些方法</span>
+methodsNeedChange<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">methodName</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 备份原来的方法</span>
+  <span class="token keyword">const</span> original <span class="token operator">=</span> arrayPrototype<span class="token punctuation">[</span>methodName<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 定义新的方法</span>
+  <span class="token function">def</span><span class="token punctuation">(</span>
+    arrayMethods<span class="token punctuation">,</span>
+    methodName<span class="token punctuation">,</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;array数据已经被劫持&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 恢复原来的功能(数组方法)</span>
+      <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">original</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 把类数组对象变成数组</span>
+      <span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 把这个数组身上的__ob__取出来</span>
+      <span class="token comment">// 在拦截器中获取Observer的实例</span>
+      <span class="token keyword">const</span> ob <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>__ob__<span class="token punctuation">;</span>
+
+      <span class="token comment">// 有三种方法 push、unshift、splice能插入新项，要劫持（侦测）这些数据（插入新项）</span>
+      <span class="token keyword">let</span> inserted <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">switch</span> <span class="token punctuation">(</span>methodName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;push&quot;</span><span class="token operator">:</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;unshift&quot;</span><span class="token operator">:</span>
+          inserted <span class="token operator">=</span> args<span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">&quot;splice&quot;</span><span class="token operator">:</span>
+          inserted <span class="token operator">=</span> args<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// 查看有没有新插入的项inserted，有的话就劫持</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>inserted<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ob<span class="token punctuation">.</span><span class="token function">observeArray</span><span class="token punctuation">(</span>inserted<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token comment">// 发布订阅模式，通知dep</span>
+      <span class="token comment">// 向依赖发送消息</span>
+      ob<span class="token punctuation">.</span>dep<span class="token punctuation">.</span><span class="token function">notify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token boolean">false</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h1 id="_5-测试侦测情况"><a href="#_5-测试侦测情况" class="header-anchor">#</a> 5. 测试侦测情况</h1> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">d</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">e</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">,</span> <span class="token number">55</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/18eaf7e1b9204530ad8157d545f89ca5~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0007cb1378d54216b773f6d583ae90bd~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/760c91729e054fb2949d97dddf49d9d9~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eef0a774d1c4b62b6681d5e2fedcb4d~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>a<span class="token operator">++</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/50ce8b99c76a4a4d90020a13b3ea60c3~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>b<span class="token punctuation">.</span>c<span class="token punctuation">)</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4907e7481b484ee6bc4cbc3ccc240534~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>b<span class="token punctuation">.</span>c<span class="token punctuation">.</span>d <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ff58bf54567424cacfb3346b69c5567~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>e<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">66</span><span class="token punctuation">,</span> <span class="token number">77</span><span class="token punctuation">,</span> <span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0032d2297ce44bd0923d1d36c24c96aa~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>e<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/985b79f36d9744f59e3292e165c1629e~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Watcher</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">&quot;b.c.d&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;watcher监听&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/28c6bb80be2344bab8fa9ee5d770a4c1~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述">
+源码链接 <a href="https://gitee.com/ykang2020/vue_learn" target="_blank" rel="noopener noreferrer">https://gitee.com/ykang2020/vue_learn<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2022/5/6 13:38:07</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/yk_manual/fe_advance/Vue/vue_src/02diff.html" class="prev">
+            diff
+          </a></span> <span class="next"><a href="/yk_manual/fe_advance/Vue/vue_src/04ast.html">
+            ast
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_1-1-why-临时变量" class="sidebar-link reco-side-_1-1-why-临时变量" data-v-cb1513f6>1.1 Why (临时变量)</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_1-2-how-闭包" class="sidebar-link reco-side-_1-2-how-闭包" data-v-cb1513f6>1.2 How (闭包)</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_2-1-why-嵌套" class="sidebar-link reco-side-_2-1-why-嵌套" data-v-cb1513f6>2.1 Why （嵌套）</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_2-2-how-递归" class="sidebar-link reco-side-_2-2-how-递归" data-v-cb1513f6>2.2 How（递归）</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#observe-js" class="sidebar-link reco-side-observe-js" data-v-cb1513f6>observe.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#observer-js" class="sidebar-link reco-side-observer-js" data-v-cb1513f6>Observer.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#def-js" class="sidebar-link reco-side-def-js" data-v-cb1513f6>def.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#definereactive-js" class="sidebar-link reco-side-definereactive-js" data-v-cb1513f6>defineReactive.js</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_2-3-测试" class="sidebar-link reco-side-_2-3-测试" data-v-cb1513f6>2.3 测试</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#index-js" class="sidebar-link reco-side-index-js" data-v-cb1513f6>index.js</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_3-1-前置知识" class="sidebar-link reco-side-_3-1-前置知识" data-v-cb1513f6>3.1 前置知识</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#object-setprototypeof-修改对象原型" class="sidebar-link reco-side-object-setprototypeof-修改对象原型" data-v-cb1513f6>Object.setPrototypeOf() 修改对象原型</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#object-create-创建一个新对象" class="sidebar-link reco-side-object-create-创建一个新对象" data-v-cb1513f6>Object.create() 创建一个新对象</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_3-2-实现" class="sidebar-link reco-side-_3-2-实现" data-v-cb1513f6>3.2 实现</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#array-js" class="sidebar-link reco-side-array-js" data-v-cb1513f6>array.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#observer-js-2" class="sidebar-link reco-side-observer-js-2" data-v-cb1513f6>Observer.js</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_4-1-why-为什么要收集依赖" class="sidebar-link reco-side-_4-1-why-为什么要收集依赖" data-v-cb1513f6>4.1 Why 为什么要收集依赖</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_4-2-how-怎么收集依赖" class="sidebar-link reco-side-_4-2-how-怎么收集依赖" data-v-cb1513f6>4.2 How 怎么收集依赖</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#依赖收集到哪里-dep" class="sidebar-link reco-side-依赖收集到哪里-dep" data-v-cb1513f6>依赖收集到哪里？ Dep</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#依赖是什么-watcher" class="sidebar-link reco-side-依赖是什么-watcher" data-v-cb1513f6>依赖是什么？Watcher</a></li><li class="level-2" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#_4-3-实现" class="sidebar-link reco-side-_4-3-实现" data-v-cb1513f6>4.3 实现</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#dep-js" class="sidebar-link reco-side-dep-js" data-v-cb1513f6>Dep.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#watcher-js" class="sidebar-link reco-side-watcher-js" data-v-cb1513f6>Watcher.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#definereactive-js-2" class="sidebar-link reco-side-definereactive-js-2" data-v-cb1513f6>defineReactive.js</a></li><li class="level-3" data-v-cb1513f6><a href="/yk_manual/fe_advance/Vue/vue_src/03%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94.html#array-js-2" class="sidebar-link reco-side-array-js-2" data-v-cb1513f6>array.js</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><canvas id="vuepress-canvas-cursor"></canvas><div></div></div></div>
+    <script src="/yk_manual/assets/js/app.1e74c93b.js" defer></script><script src="/yk_manual/assets/js/3.7830d0fe.js" defer></script><script src="/yk_manual/assets/js/1.caa73dc8.js" defer></script><script src="/yk_manual/assets/js/184.35abbdec.js" defer></script><script src="/yk_manual/assets/js/9.94359d55.js" defer></script>
+  </body>
+</html>
